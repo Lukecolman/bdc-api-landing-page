@@ -3,7 +3,7 @@ import React from 'react'
 const Integration = () => {
   return (
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-    <div className="flex flex-col lg:flex-row">
+    <div className="flex flex-col justify-center items-center lg:flex-row">
       <div className="max-w-xl pr-16 mx-auto mb-10">
         <h5 className="mb-6 text-3xl font-extrabold leading-none">
           The quick, brown fox jumps over a lazy dog
@@ -29,7 +29,7 @@ const Integration = () => {
           </a>
         </div>
       </div>
-      <div className="flex flex-col shadow-2xl">
+      <div className="flex flex-col shadow-2xl md:max-w-xl lg:max-w-md">
         {/* ITEM 1 */}
         <div className="flex gap-6 max-w-md py-8 px-12 border-b-2 border-gray-100 duration-150 transition-all hover:bg-green-200">
           <div className="flex items-center justify-center min-w-16 h-16 mb-4 rounded-full bg-indigo-50">
@@ -47,7 +47,7 @@ const Integration = () => {
               />
             </svg>
           </div>
-          <p className="text-sm text-gray-700 max-w-[280px]">
+          <p className="text-sm text-gray-700 lg:max-w-[280px]">
             A flower in my garden, a mystery in my panties. Heart attack never
             stopped old Big Bear. I didn't even know we were calling him Big
             Bear.
@@ -70,7 +70,7 @@ const Integration = () => {
               />
             </svg>
           </div>
-          <p className="text-sm text-gray-700 max-w-[280px]">
+          <p className="text-sm text-gray-700 lg:max-w-[280px]">
             A flower in my garden, a mystery in my panties. Heart attack never
             stopped old Big Bear. I didn't even know we were calling him Big
             Bear.
@@ -93,7 +93,7 @@ const Integration = () => {
               />
             </svg>
           </div>
-          <p className="text-sm text-gray-700 max-w-[280px]">
+          <p className="text-sm text-gray-700 lg:max-w-[280px]">
             A flower in my garden, a mystery in my panties. Heart attack never
             stopped old Big Bear. I didn't even know we were calling him Big
             Bear.
@@ -116,7 +116,7 @@ const Integration = () => {
               />
             </svg>
           </div>
-          <p className="text-sm text-gray-700 max-w-[280px]">
+          <p className="text-sm text-gray-700 lg:max-w-[280px]">
             A flower in my garden, a mystery in my panties. Heart attack never
             stopped old Big Bear. I didn't even know we were calling him Big
             Bear.

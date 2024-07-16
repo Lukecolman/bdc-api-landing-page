@@ -35,7 +35,7 @@ const Integration = () => {
                             </svg>
                         </div>
                         <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
-                        {integration.items[0].content}
+                            {integration.items[0].content}
                         </p>
                     </div>
                     {/* ITEM 2 */}
@@ -52,7 +52,7 @@ const Integration = () => {
                             </svg>
                         </div>
                         <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
-                        {integration.items[1].content}
+                            {integration.items[1].content}
                         </p>
                     </div>
                     {/* ITEM 3 */}
@@ -69,8 +69,7 @@ const Integration = () => {
                             </svg>
                         </div>
                         <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
-                        {integration.items[2].content}
-
+                            {integration.items[2].content}
                         </p>
                     </div>
                     {/* ITEM 4 */}
@@ -87,8 +86,7 @@ const Integration = () => {
                             </svg>
                         </div>
                         <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
-                        {integration.items[3].content}
-
+                            {integration.items[3].content}
                         </p>
                     </div>
                 </div>

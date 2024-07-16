@@ -16,7 +16,7 @@ export const heroBanner = {
 
 // FACILITIES
 export const facilities = {
-    sectionTitle: "Facilidades para tu negocio",
+    title: "Facilidades para tu negocio",
     subtitle: "¿En qué facilita el desarrollo de mi negocio tener BDC Conecta?",
     items: [
       {
@@ -55,7 +55,7 @@ export const facilities = {
 
 // INTEGRATION
 export const integration = {
-    sectionTitle: "¿Cómo es el proceso para integrar BDC Conecta?",
+   title: "¿Cómo es el proceso para integrar BDC Conecta?",
     items: [
       {
         id: 1,

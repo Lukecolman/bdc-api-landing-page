@@ -1,5 +1,26 @@
 // TODO:
 // - TEXTOS HEADER / FORM / FOOTER
+export const bdc = {
+  logo: "./images/logo-bdc.svg",
+  alt: "Banco de Comercio",
+  urlMainWeb: "https://bancodecomercio.com.ar/",
+  }
+
+export const navbar = {
+  integracion: {
+    title: "Integración",
+    url: "#",
+  },
+  soluciones: {
+    title: "Soluciones",
+    url: "#"
+  },
+  contacto: {
+    title: "Contacto",
+    url: "#",
+  },
+}
+
 
 // HERO BANNER
 export const heroBanner = {
@@ -176,10 +197,6 @@ export const socialMedia = {
 ],
 };
 
-export const bdcWeb = {
-logo: "",
-urlMainWeb: "https://bancodecomercio.com.ar/",
-}
 
 export const form = {
   title:"Contactanos",

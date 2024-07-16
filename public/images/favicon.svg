@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 93.54 60">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-6);
+      }
+
+      .cls-3 {
+        clip-path: url(#clippath-2);
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath-1);
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath-4);
+      }
+
+      .cls-6 {
+        fill: url(#linear-gradient-5);
+      }
+
+      .cls-7 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-8 {
+        fill: none;
+      }
+
+      .cls-9 {
+        clip-path: url(#clippath-3);
+      }
+
+      .cls-10 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-11 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-12 {
+        fill: url(#linear-gradient-4);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-8" d="M75.78,29.24c3.78-.24,7.57-.22,11.35,.03L93.54,0l-17.75,29.24Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="69.75" y1="13.79" x2="92.65" y2="15.09" gradientUnits="userSpaceOnUse">
+      <stop offset=".25" stop-color="#72ae0f"/>
+      <stop offset=".85" stop-color="#d0e3aa"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="13.12" y1="25.79" x2="93.53" y2="25.79" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#72ae0f"/>
+      <stop offset=".45" stop-color="#accf6e"/>
+      <stop offset="1" stop-color="#d0e3aa"/>
+    </linearGradient>
+    <clipPath id="clippath-1">
+      <path class="cls-1" d="M13.12,51.59c11.11-6.65,22.61-12.59,34.85-16.73,8.98-3.09,18.34-4.98,27.82-5.61L93.53,0,13.12,51.59Z"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-3" x1="13.12" y1="25.79" x2="95.06" y2="25.79" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#72ae0f"/>
+      <stop offset=".8" stop-color="#d0e3aa"/>
+    </linearGradient>
+    <clipPath id="clippath-2">
+      <path class="cls-8" d="M75.78,29.24l-8.72,14.37,13.36,16.39,6.71-30.72c-1.95-.13-3.91-.2-5.87-.2-1.82,0-3.65,.06-5.48,.17"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-4" x1="380.43" y1="832.09" x2="380.49" y2="832.09" gradientTransform="translate(-23287.69 25776.81) scale(20.07 -30.92)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00184e"/>
+      <stop offset="1" stop-color="#122c63"/>
+    </linearGradient>
+    <clipPath id="clippath-3">
+      <path class="cls-8" d="M73.54,29.18l-1.18,.02c-.43,0-.9,.05-1.39,.07-1,.04-2.11,.16-3.33,.28-1.21,.16-2.54,.3-3.92,.55-.69,.12-1.41,.22-2.13,.37s-1.46,.3-2.21,.46-1.51,.34-2.28,.52-1.54,.37-2.32,.58c-1.55,.45-3.12,.88-4.68,1.37-.77,.26-1.55,.52-2.32,.78-.77,.26-1.54,.51-2.29,.8s-1.5,.56-2.23,.85-1.47,.55-2.17,.86c-1.41,.59-2.76,1.2-4.05,1.76s-2.46,1.19-3.55,1.73c-.55,.27-1.07,.53-1.57,.78-.5,.25-.95,.52-1.39,.76-.87,.48-1.62,.91-2.24,1.27s-1.1,.64-1.43,.83l-.5,.3s.19-.08,.55-.22,.88-.34,1.54-.61,1.46-.59,2.37-.98,1.95-.79,3.08-1.24l3.65-1.45c1.3-.48,2.68-.99,4.1-1.54,1.42-.53,2.92-1,4.4-1.56,.74-.28,1.51-.51,2.28-.77l2.3-.75c1.54-.5,3.09-.95,4.61-1.41,1.54-.39,3.03-.87,4.5-1.23,.73-.18,1.46-.36,2.16-.55s1.4-.33,2.08-.49c1.35-.32,2.64-.58,3.83-.83l1.71-.32c.27-.05,.54-.1,.79-.15l.75-.12c.97-.17,1.82-.3,2.53-.4s1.26-.18,1.64-.22,.58-.06,.58-.06c0,0-.2-.02-.58-.03-.32-.02-.77-.03-1.34-.03h-.32"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-5" x1="4.22" y1="36.66" x2="105.74" y2="36.66" xlink:href="#linear-gradient-3"/>
+    <clipPath id="clippath-4">
+      <path class="cls-8" d="M47.97,34.85c-12.24,4.15-23.74,10.08-34.85,16.73L0,60l67.06-16.39,8.72-14.37c-9.48,.63-18.83,2.52-27.82,5.61"/>
+    </clipPath>
+    <linearGradient id="linear-gradient-6" x1="6.49" y1="52.88" x2="72.85" y2="35.38" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00184e"/>
+      <stop offset="1" stop-color="#767ea7"/>
+    </linearGradient>
+  </defs>
+  <g id="Grupo_622" data-name="Grupo 622">
+    <g>
+      <g id="Grupo_613" data-name="Grupo 613">
+        <g class="cls-7">
+          <g id="Grupo_612" data-name="Grupo 612">
+            <rect id="Rectángulo_350" data-name="Rectángulo 350" class="cls-11" x="75.78" width="17.75" height="29.28"/>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_615" data-name="Grupo 615">
+        <g>
+          <path class="cls-1" d="M13.12,51.59c11.11-6.65,22.61-12.59,34.85-16.73,8.98-3.09,18.34-4.98,27.82-5.61L93.53,0,13.12,51.59Z"/>
+          <g class="cls-4">
+            <g id="Grupo_614" data-name="Grupo 614">
+              <rect id="Rectángulo_351" data-name="Rectángulo 351" class="cls-10" x="13.12" width="80.41" height="51.59"/>
+            </g>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_617" data-name="Grupo 617">
+        <g class="cls-3">
+          <g id="Grupo_616" data-name="Grupo 616">
+            <rect id="Rectángulo_352" data-name="Rectángulo 352" class="cls-12" x="67.06" y="29.07" width="20.07" height="30.92"/>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_621" data-name="Grupo 621">
+        <g class="cls-9">
+          <g id="Grupo_620" data-name="Grupo 620">
+            <rect id="Rectángulo_354" data-name="Rectángulo 354" class="cls-6" x="26.33" y="29.18" width="49.45" height="14.95"/>
+          </g>
+        </g>
+      </g>
+      <g id="Grupo_619" data-name="Grupo 619">
+        <g class="cls-5">
+          <g id="Grupo_618" data-name="Grupo 618">
+            <rect id="Rectángulo_353" data-name="Rectángulo 353" class="cls-2" y="29.22" width="75.78" height="30.76"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -9,7 +9,7 @@ export const heroBanner = {
     content:
         'Integrá tu sistema de gestión, acelerá tus cobros y pagos, y desbloqueá un nuevo nivel de eficiencia. Dale un giro disruptivo a tu negocio con nuestras soluciones tecnológicas de APIs BDC Conecta. Con nuestro sistema de APIs a medida, optimizás tiempos, reducís costos y maximizás recursos, llevando tu empresa a un nuevo modelo de administración y agilidad en tesorería.',
     button: {
-        text: 'Descubre más',
+        text: 'Contactá un asesor',
         link: '#',
     },
     imageUrl: 'https://picsum.photos/765/438',
@@ -153,3 +153,21 @@ export const bdcApplicants = [
         ],
     },
 ];
+
+export const socialMedia = {
+    instagram: [
+        {
+            url: 'https://www.instagram.com/banco.de.comercio/',
+        },
+    ],
+    linkedin: [
+      {
+          url: 'https://www.linkedin.com/company/35467846/admin/',
+      },
+  ],
+};
+
+export const bdcWeb = {
+  logo: "",
+  urlMainWeb: "https://bancodecomercio.com.ar/",
+}

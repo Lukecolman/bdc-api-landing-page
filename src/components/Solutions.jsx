@@ -76,6 +76,15 @@ const Solutions = () => {
                     </div>
 
                 </div>
+
+            </div>
+
+            <div className='text-center pb-14'>
+                <a
+                    href={solutions.button.url}
+                    className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-green-400 hover:bg-green-700 focus:shadow-outline focus:outline-none'>
+                    {solutions.button.text}
+                </a>
             </div>
         </>
     );

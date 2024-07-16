@@ -96,14 +96,13 @@ const Facilities = () => {
                     <p className='mb-2 font-bold leading-snug text-lg'>{facilities.items[5].content}</p>
                 </div>
             </div>
-            {/* <div className="text-center">
-      <a
-        href="/"
-        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-green-400 hover:bg-green-700 focus:shadow-outline focus:outline-none"
-      >
-        boton extra
-      </a>
-    </div> */}
+            <div className='text-center'>
+                <a
+                    href={facilities.button.url}
+                    className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-green-400 hover:bg-green-700 focus:shadow-outline focus:outline-none'>
+                    {facilities.button.text}
+                </a>
+            </div>
         </div>
     );
 };

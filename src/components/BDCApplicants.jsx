@@ -5,14 +5,14 @@ const BDCApplicants = () => {
   const applicant = bdcApplicants[0];
 
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
     <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-5xl md:mb-12 bg-green-400">
       {/* <div>
         <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-400">
           Brand new
         </p>
       </div> */}
-      <h2 className="max-w-7xl mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:text-6xl md:mx-auto text-balance bg-red-300">
+      <h2 className="max-w-7xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:text-6xl md:mx-auto text-balance bg-red-300">
        {applicant.title}
       </h2>
       <p className="max-w-2xl mx-auto text-base text-gray-700 md:text-lg bg-blue-300 text-pretty">

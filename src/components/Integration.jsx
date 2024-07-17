@@ -3,7 +3,7 @@ import { integration } from '../constants';
 
 const Integration = () => {
     return (
-        <div className='px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
+        <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
             <div className='flex flex-col pl-16 justify-between items-center lg:flex-row'>
                 {/* TITLE */}
                 <div className='max-w-2xl pr-16'>

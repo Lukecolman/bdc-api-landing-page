@@ -213,18 +213,18 @@ export const footer = {
         title: 'Contacto',
         telefono: {
             label: 'Teléfono: ',
-            info: '1234-1234',
+            info: '+54 5554-5800',
             url: '',
         },
         email: {
             label: 'Email: ',
-            info: 'mail@gmail.com',
-            url: 'mailto:',
+            info: 'bdc.conecta@bancodecomercio.com.ar',
+            url: 'mailto:bdc.conecta@bancodecomercio.com.ar',
         },
         address: {
             label: 'Dirección: ',
-            info: 'Dirección 123',
-            url: '',
+            info: 'Sarmiento 356, CABA',
+            url: 'https://maps.app.goo.gl/yjo4f5zQaHDPUiiK6',
         },
     },
     copyright: 'Banco de comercio © 2024 - Todos los derechos reservados.',

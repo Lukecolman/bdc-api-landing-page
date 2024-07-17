@@ -3,11 +3,11 @@ import { form } from '../constants';
 
 const Form = () => {
     return (
-        <div className='overflow-hidden bg-gray-900 md:px-8'>
+        <div className='font-inter overflow-hidden bg-gray-900 md:px-8'>
             <div className='px-3.5 py-16 mx-auto  md:max-w-full  md:px-24 lg:px-8 lg:py-20 bg-green-400'>
                 <div className='flex flex-col items-center justify-between'>
                     <div className='w-full text-center bg-red-400'>
-                        <h2 className='max-w-lg mx-auto mb-6 font-sans text-3xl font-semibold text-white sm:text-5xl sm:leading-none bg-blue-500'>
+                        <h2 className='max-w-lg mx-auto mb-6 text-3xl font-semibold text-white sm:text-5xl sm:leading-none bg-blue-500'>
                             {form.title}
                         </h2>
                         {/* <p className='max-w-xl mb-4 text-base text-gray-400 md:text-lg'>

@@ -13,12 +13,16 @@ export const navbar = {
   },
   soluciones: {
     title: "Soluciones",
-    url: "#"
+    url: "#",
   },
   contacto: {
     title: "Contacto",
     url: "#",
   },
+  ctaMobile: {
+    title: "Contactá un asesor",
+    url: "#",
+  }
 }
 
 
@@ -33,7 +37,10 @@ export const heroBanner = {
       text: 'Contactá un asesor',
       link: '#',
   },
-  imageUrl: 'https://picsum.photos/765/438',
+  imageUrl: {
+    img:'https://picsum.photos/765/438',
+    alt: '',
+  }
 };
 
 // FACILITIES

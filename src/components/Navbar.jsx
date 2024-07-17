@@ -84,8 +84,8 @@ const Navbar = () => {
             </svg>
           </button>
           {isMenuOpen && (
-            <div className="absolute top-0 left-0 w-full bg-yellow-500">
-              <div className="p-5 border rounded shadow-sm bg-red-400 px-4 md:px-24">
+            <div className=" top-0 z-50 left-0 w-full  fixed inset-0  lg:hidden bg-yellow-500">
+              <div className="py-5 flex flex-col item-center bg-red-400 h-full px-4 md:px-24">
                 <div className="flex items-center justify-between mb-4">
                   <div>
                   <a
@@ -112,69 +112,40 @@ const Navbar = () => {
                     </button>
                   </div>
                 </div>
-                <nav>
-                  <ul className="space-y-4">
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
-                      >
-                        Product
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
-                      >
-                        Features
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="Product pricing"
-                        title="Product pricing"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
-                      >
-                        Pricing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="About us"
-                        title="About us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
-                      >
-                        About us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="Sign in"
-                        title="Sign in"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
-                      >
-                        Sign in
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-400 hover:bg-green-700 focus:shadow-outline focus:outline-none"
-                        aria-label="Sign up"
-                        title="Sign up"
-                      >
-                        Sign up
-                      </a>
-                    </li>
+                <nav className='justify-between items-center bg-green-500 h-full  flex flex-col'>
+                  <ul className="space-y-10 text-center text-4xl bg-violet-700 flex-1 mt-20">
+                  <li>
+              <a
+                href={navbar.soluciones.url}
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
+              >
+                {navbar.integracion.title}
+              </a>
+            </li>
+            <li>
+              <a
+                href={navbar.soluciones.url}
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
+              >
+                {navbar.soluciones.title}
+              </a>
+            </li>
+            <li>
+              <a
+                href={navbar.soluciones.url}
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400"
+              >
+                {navbar.contacto.title}
+              </a>
+            </li>
+
                   </ul>
+                  <a
+                    href={navbar.ctaMobile.url}
+                    className='max-w-md w-full mt-24 inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-800 hover:bg-green-700 focus:shadow-outline focus:outline-none mb-8'
+                    >
+                    {navbar.ctaMobile.title}
+                </a>
                 </nav>
               </div>
             </div>

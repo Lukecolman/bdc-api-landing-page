@@ -120,20 +120,23 @@ export const solutions = {
         {
             id: 1,
             img: 'https://picsum.photos/588/384',
+            alt: '',
             title: 'Cobranzas y Pagos',
             content:
                 'Automatizá los pagos y cobros de tus clientes y proveedores, ahorrando tiempo y costos de gestión. Con BDC Conecta podés consultar y realizar transferencias a CBU, CVU y Alias, y gestionar proveedores de forma eficiente. Transforma la gestión de tus transacciones y llevá tu negocio al próximo nivel con nuestras soluciones tecnológicas.',
         },
         {
             id: 2,
-            img: 'https://picsum.photos/588/384',
+            img: 'https://picsum.photos/588/385',
+            alt: '',
             title: 'Billetera Virtual',
             content:
                 'Nuestra solución ofrece diversas funcionalidades para optimizar la gestión de las transacciones en tu billetera: altas y cambio de alias de CVU, consulta, envío y recepción de transferencias entre CVU/CBU, y notificaciones de crédito en CVU, y posibilidad de financiación a tus clientes.',
         },
         {
             id: 3,
-            img: 'https://picsum.photos/588/384',
+            img: 'https://picsum.photos/588/383',
+            alt: '',
             title: 'Información de la cuenta',
             content:
                 'Te permite gestionar integralmente las cuentas de tus clientes en BDC Conecta. Accedé a los movimientos de cuenta, consultá datos mediante alias, CBU o CVU, y validá la información asociada a cada uno. Identificá el origen de transferencias recibidas y obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',

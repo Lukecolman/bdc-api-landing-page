@@ -19,8 +19,8 @@ const Solutions = () => {
                     <div>
                         <img
                             className='object-cover w-full h-56 rounded shadow-lg sm:h-96'
-                            src='https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260'
-                            alt=''
+                            src={solutions.items[0].img}
+                            alt={solutions.items[0].alt}
                         />
                     </div>
 
@@ -40,8 +40,8 @@ const Solutions = () => {
                     <div>
                         <img
                             className='object-cover w-full h-56 rounded shadow-lg sm:h-96'
-                            src='https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260'
-                            alt=''
+                            src={solutions.items[1].img}
+                            alt={solutions.items[1].alt}
                         />
                     </div>
 
@@ -61,8 +61,8 @@ const Solutions = () => {
                     <div>
                         <img
                             className='object-cover w-full h-56 rounded shadow-lg sm:h-96'
-                            src={solutions.items[2].title}
-                            alt=''
+                            src={solutions.items[2].img}
+                            alt={solutions.items[2].alt}
                         />
                     </div>
 
@@ -82,7 +82,7 @@ const Solutions = () => {
             <div className='font-inter text-center mt-10 pb-14'>
                 <a
                     href={solutions.button.url}
-                    className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-green-400 hover:bg-green-700 focus:shadow-outline focus:outline-none'>
+                    className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-bdc-green hover:bg-bdc-green-400 focus:shadow-outline focus:outline-none'>
                     {solutions.button.text}
                 </a>
             </div>

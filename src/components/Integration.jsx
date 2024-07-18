@@ -7,7 +7,8 @@ const Integration = () => {
             <div className='flex flex-col pl-16 justify-between items-center lg:flex-row'>
                 {/* TITLE */}
                 <div className='max-w-2xl pr-16'>
-                    <h5 className='mb-6 text-6xl font-extrabold leading-tight text-balance'>{integration.title}</h5>
+                        
+                        <h5 className='mb-6 text-6xl font-extrabold leading-tight text-balance' dangerouslySetInnerHTML={{ __html: integration.title }}/> 
                     {/* <p className="mb-6 text-gray-900">
           CONTENIDO
         </p> */}
@@ -22,9 +23,9 @@ const Integration = () => {
                 </div>
                 <div className='flex flex-col shadow-2xl md:max-w-xl lg:max-w-md'>
                     {/* ITEM 1 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-gray-100 duration-150 transition-all hover:bg-green-200'>
-                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full bg-indigo-50'>
-                            <svg className='w-12 h-12 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
+                            <svg className='w-12 h-12 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
                                 <polygon
                                     strokeWidth='3'
                                     strokeLinecap='round'
@@ -34,14 +35,14 @@ const Integration = () => {
                                 />
                             </svg>
                         </div>
-                        <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
+                        <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
                             {integration.items[0].content}
                         </p>
                     </div>
                     {/* ITEM 2 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-gray-100 duration-150 transition-all hover:bg-green-200'>
-                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full bg-indigo-50'>
-                            <svg className='w-12 h-12 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
+                            <svg className='w-12 h-12 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
                                 <polygon
                                     strokeWidth='3'
                                     strokeLinecap='round'
@@ -51,14 +52,14 @@ const Integration = () => {
                                 />
                             </svg>
                         </div>
-                        <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
+                        <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
                             {integration.items[1].content}
                         </p>
                     </div>
                     {/* ITEM 3 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-gray-100 duration-150 transition-all hover:bg-green-200'>
-                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full bg-indigo-50'>
-                            <svg className='w-12 h-12 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
+                            <svg className='w-12 h-12 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
                                 <polygon
                                     strokeWidth='3'
                                     strokeLinecap='round'
@@ -68,14 +69,14 @@ const Integration = () => {
                                 />
                             </svg>
                         </div>
-                        <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
+                        <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
                             {integration.items[2].content}
                         </p>
                     </div>
                     {/* ITEM 4 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-gray-100 duration-150 transition-all hover:bg-green-200'>
-                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full bg-indigo-50'>
-                            <svg className='w-12 h-12 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                        <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
+                            <svg className='w-12 h-12 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
                                 <polygon
                                     strokeWidth='3'
                                     strokeLinecap='round'
@@ -85,7 +86,7 @@ const Integration = () => {
                                 />
                             </svg>
                         </div>
-                        <p className='text-md leading-snug font-semibold text-gray-700 lg:max-w-[280px] text-pretty'>
+                        <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
                             {integration.items[3].content}
                         </p>
                     </div>

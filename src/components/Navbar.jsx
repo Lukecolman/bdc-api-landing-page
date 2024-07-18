@@ -6,7 +6,7 @@ const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     return (
-        <div className='px-4 py-5 mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 relative'>
+        <div className='font-inter px-4 py-5 mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 relative'>
             <div className=' flex items-center justify-between'>
                 <div className='flex items-center'>
                     <a href={bdc.urlMainWeb} className='inline-flex items-center mr-8' target='_blank'>

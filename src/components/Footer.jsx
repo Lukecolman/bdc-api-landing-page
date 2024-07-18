@@ -3,7 +3,7 @@ import { bdc, footer, socialMedia } from '../constants';
 
 const Footer = () => {
     return (
-        <div className='px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
+        <div className='font-inter px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
             <div className='grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4'>
                 <div className='sm:col-span-2'>
                     <a href={bdc.urlMainWeb} className='inline-flex items-center mr-8' target='_blank'>
@@ -15,11 +15,9 @@ const Footer = () => {
                     {/* PHONE */}
                     <div className='flex'>
                         <p className='mr-1 text-gray-800'>{footer.contacto.telefono.label}</p>
-                        <a
-                            href={footer.contacto.telefono.url}
-                            className='transition-colors duration-300 text-green-400 hover:text-green-800'>
+                        <p className='transition-colors duration-300 text-green-400 hover:text-green-800'>
                             {footer.contacto.telefono.info}
-                        </a>
+                        </p>
                     </div>
                     {/* EMAIL */}
                     <div className='flex'>

@@ -27,7 +27,7 @@ export const navbar = {
 
 // HERO BANNER
 export const heroBanner = {
-    title: 'Eficiencia en cobros y pagos de tu negocio con BDC Conecta',
+    title: 'Eficiencia en cobros y pagos de tu negocio con <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">BDC Conecta</span>',
     // contentTEST: "Transforma tu negocio con nuestras soluciones integradas. Mejora la eficiencia, seguridad y experiencia del cliente con BDC Conecta.",
     // contentTEST2: "Transforma tu negocio con BDC Conecta. Integra tu sistema de gestión y optimiza tus operaciones financieras con nuestras soluciones tecnológicas de APIs. Acelera tus procesos, reduce costos y maximiza la eficiencia.",
     content:
@@ -37,7 +37,7 @@ export const heroBanner = {
         link: '#',
     },
     imageUrl: {
-        img: 'https://picsum.photos/765/438',
+        img: 'https://picsum.photos/1065/538',
         alt: '',
     },
 };
@@ -87,7 +87,8 @@ export const facilities = {
 
 // INTEGRATION
 export const integration = {
-    title: '¿Cómo es el proceso para integrar BDC Conecta?',
+    // title: '¿Cómo es el proceso para integrar BDC Conecta?',
+    title: '¿Cómo es el proceso para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">integrar BDC Conecta?</span>',
     items: [
         {
             id: 1,
@@ -118,21 +119,24 @@ export const solutions = {
     items: [
         {
             id: 1,
-            image: '',
+            img: 'https://picsum.photos/588/384',
+            alt: '',
             title: 'Cobranzas y Pagos',
             content:
                 'Automatizá los pagos y cobros de tus clientes y proveedores, ahorrando tiempo y costos de gestión. Con BDC Conecta podés consultar y realizar transferencias a CBU, CVU y Alias, y gestionar proveedores de forma eficiente. Transforma la gestión de tus transacciones y llevá tu negocio al próximo nivel con nuestras soluciones tecnológicas.',
         },
         {
             id: 2,
-            image: '',
+            img: 'https://picsum.photos/588/385',
+            alt: '',
             title: 'Billetera Virtual',
             content:
                 'Nuestra solución ofrece diversas funcionalidades para optimizar la gestión de las transacciones en tu billetera: altas y cambio de alias de CVU, consulta, envío y recepción de transferencias entre CVU/CBU, y notificaciones de crédito en CVU, y posibilidad de financiación a tus clientes.',
         },
         {
             id: 3,
-            image: '',
+            img: 'https://picsum.photos/588/383',
+            alt: '',
             title: 'Información de la cuenta',
             content:
                 'Te permite gestionar integralmente las cuentas de tus clientes en BDC Conecta. Accedé a los movimientos de cuenta, consultá datos mediante alias, CBU o CVU, y validá la información asociada a cada uno. Identificá el origen de transferencias recibidas y obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',
@@ -213,18 +217,18 @@ export const footer = {
         title: 'Contacto',
         telefono: {
             label: 'Teléfono: ',
-            info: '1234-1234',
+            info: '+54 5554-5800',
             url: '',
         },
         email: {
             label: 'Email: ',
-            info: 'mail@gmail.com',
-            url: 'mailto:',
+            info: 'bdc.conecta@bancodecomercio.com.ar',
+            url: 'mailto:bdc.conecta@bancodecomercio.com.ar',
         },
         address: {
             label: 'Dirección: ',
-            info: 'Dirección 123',
-            url: '',
+            info: 'Sarmiento 356, CABA',
+            url: 'https://maps.app.goo.gl/yjo4f5zQaHDPUiiK6',
         },
     },
     copyright: 'Banco de comercio © 2024 - Todos los derechos reservados.',

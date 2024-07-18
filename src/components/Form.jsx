@@ -3,17 +3,17 @@ import { form } from '../constants';
 
 const Form = () => {
     return (
-        <div className='font-inter overflow-hidden bg-gray-900 md:px-8'>
-            <div className='px-3.5 py-16 mx-auto  md:max-w-full  md:px-24 lg:px-8 lg:py-20 bg-green-400'>
+        <div className='font-inter overflow-hidden md:px-8 bg-bdc-gray-200'>
+            <div className='px-3.5 py-16 mx-auto  md:max-w-full  md:px-24 lg:px-8 lg:py-20 '>
                 <div className='flex flex-col items-center justify-between'>
-                    <div className='w-full text-center bg-red-400'>
-                        <h2 className='max-w-lg mx-auto mb-6 text-3xl font-semibold text-white sm:text-5xl sm:leading-none bg-blue-500'>
+                    <div className='w-full text-center '>
+                        <h2 className='max-w-lg mx-auto mb-6 text-3xl font-semibold  sm:text-5xl sm:leading-none'>
                             {form.title}
                         </h2>
                         {/* <p className='max-w-xl mb-4 text-base text-gray-400 md:text-lg'>
                             sub text
                         </p> */}
-                        <div className='relative  bg-violet-600 max-w-md mx-auto'>
+                        <div className='relative  max-w-md mx-auto'>
                             <form>
                                 <div className='mb-1 sm:mb-2 text-xs'>
                                     <div className='grid grid-cols-2 gap-x-5 gap-y-3'>

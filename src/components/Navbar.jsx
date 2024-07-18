@@ -56,7 +56,7 @@ const Navbar = () => {
                     <button
                         aria-label='Open Menu'
                         title='Open Menu'
-                        className='p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-green-50 focus:bg-green-50 bg-red-400'
+                        className='p-2 -mr-1 transition duration-200 rounded focus:outline-none focus:shadow-outline hover:bg-green-50 focus:bg-green-50'
                         onClick={() => setIsMenuOpen(true)}>
                         <svg className='w-5 text-gray-600' viewBox='0 0 24 24'>
                             <path
@@ -74,8 +74,8 @@ const Navbar = () => {
                         </svg>
                     </button>
                     {isMenuOpen && (
-                        <div className=' top-0 z-50 left-0 w-full  fixed inset-0  lg:hidden bg-yellow-500'>
-                            <div className='py-5 flex flex-col item-center bg-red-400 h-full px-4 md:px-24'>
+                        <div className=' top-0 z-50 left-0 w-full  fixed inset-0  lg:hidden bg-white'>
+                            <div className='py-5 flex flex-col item-center h-full px-4 md:px-24'>
                                 <div className='flex items-center justify-between mb-4'>
                                     <div>
                                         <a
@@ -100,8 +100,8 @@ const Navbar = () => {
                                         </button>
                                     </div>
                                 </div>
-                                <nav className='justify-between items-center bg-green-500 h-full  flex flex-col'>
-                                    <ul className='space-y-10 text-center text-4xl bg-violet-700 flex-1 mt-20'>
+                                <nav className='justify-between items-center  h-full  flex flex-col'>
+                                    <ul className='space-y-10 text-center text-4xl flex-1 mt-20'>
                                         <li>
                                             <a
                                                 href={navbar.soluciones.url}

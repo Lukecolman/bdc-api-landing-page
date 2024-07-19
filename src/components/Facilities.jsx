@@ -1,5 +1,13 @@
 import React from 'react';
 import { facilities } from '../constants';
+import {
+    AiOutlineBarChart,
+    AiOutlineThunderbolt,
+    AiOutlineSearch,
+    AiOutlineLock,
+    AiOutlineControl,
+    AiOutlineSafety,
+} from 'react-icons/ai';
 
 const Facilities = () => {
     return (
@@ -11,87 +19,39 @@ const Facilities = () => {
                 <p className='text-base text-bdc-gray-700 md:text-lg'>{facilities.subtitle}</p>
             </div>
             <div className='grid gap-8 mb-8 md:grid-cols-2 lg:grid-cols-3'>
-                <div className='p-5 duration-300 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-sm hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                        <svg className='w-10 h-10 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
-                            <polygon
-                                strokeWidth='3'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                fill='none'
-                                points='29 13 14 29 25 29 23 39 38 23 27 23'
-                            />
-                        </svg>
+                <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
+                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                        <AiOutlineBarChart className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{facilities.items[0].content}</p>
                 </div>
-                <div className='p-5 duration-300 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-sm hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                        <svg className='w-10 h-10 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
-                            <polygon
-                                strokeWidth='3'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                fill='none'
-                                points='29 13 14 29 25 29 23 39 38 23 27 23'
-                            />
-                        </svg>
+                <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
+                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                        <AiOutlineThunderbolt className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{facilities.items[1].content}</p>
                 </div>
-                <div className='p-5 duration-300 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-sm hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                        <svg className='w-10 h-10 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
-                            <polygon
-                                strokeWidth='3'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                fill='none'
-                                points='29 13 14 29 25 29 23 39 38 23 27 23'
-                            />
-                        </svg>
+                <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
+                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                        <AiOutlineSearch className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{facilities.items[2].content}</p>
                 </div>
-                <div className='p-5 duration-300 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-sm hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                        <svg className='w-10 h-10 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
-                            <polygon
-                                strokeWidth='3'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                fill='none'
-                                points='29 13 14 29 25 29 23 39 38 23 27 23'
-                            />
-                        </svg>
+                <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
+                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                        <AiOutlineLock className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{facilities.items[3].content}</p>
                 </div>
-                <div className='p-5 duration-300 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-sm hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                        <svg className='w-10 h-10 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
-                            <polygon
-                                strokeWidth='3'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                fill='none'
-                                points='29 13 14 29 25 29 23 39 38 23 27 23'
-                            />
-                        </svg>
+                <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
+                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                        <AiOutlineControl className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{facilities.items[4].content}</p>
                 </div>
-                <div className='p-5 duration-300 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-sm hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                        <svg className='w-10 h-10 text-bdc-green-200' stroke='currentColor' viewBox='0 0 52 52'>
-                            <polygon
-                                strokeWidth='3'
-                                strokeLinecap='round'
-                                strokeLinejoin='round'
-                                fill='none'
-                                points='29 13 14 29 25 29 23 39 38 23 27 23'
-                            />
-                        </svg>
+                <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
+                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                        <AiOutlineSafety className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{facilities.items[5].content}</p>
                 </div>

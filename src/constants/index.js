@@ -119,7 +119,7 @@ export const solutions = {
     items: [
         {
             id: 1,
-            img: 'https://picsum.photos/588/384',
+            img: 'https://picsum.photos/588/851',
             alt: '',
             title: 'Cobranzas y Pagos',
             content:
@@ -127,7 +127,7 @@ export const solutions = {
         },
         {
             id: 2,
-            img: 'https://picsum.photos/588/385',
+            img: 'https://picsum.photos/686/852',
             alt: '',
             title: 'Billetera Virtual',
             content:
@@ -160,7 +160,7 @@ export const bdcApplicants = [
                 icon: '',
                 title: 'PSP',
                 content:
-                    'Nuestro universo de BDC Conecta nos permite ir directo a la resolución o mejora de tus procesos específicos, como ya lo hicimos con:',
+                    'El cliente desarrolló su propia billetera virtual, desde la cual gestiona cobros y pagos masivos, creación de cuentas CVU a cuenta de terceros. También con esta solución financia a sus clientes. Todo esto le agiliza sus operaciones, ahorra costos operativos y tiempo y le permite cumplir con todas las normativas del BCRA.',
             },
         ],
         item2: [
@@ -187,7 +187,7 @@ export const bdcApplicants = [
                 icon: '',
                 title: 'Consorcios',
                 content:
-                    'El cliente desarrolló su propia billetera virtual, desde la cual gestiona cobros y pagos masivos, creación de cuentas CVU a cuenta de terceros. También con esta solución financia a sus clientes. Todo esto le agiliza sus operaciones, ahorra costos operativos y tiempo y le permite cumplir con todas las normativas del BCRA.',
+                    'Le permite identificar todos los depósitos o transferencias por medio del CVU de cada uno de los propietarios. Efectúa pagos a proveedores de forma masiva desde su tesorería. Ahorra costos y tiempo, simplificando la administración de los consorcios que administra.',
             },
         ],
     },

@@ -1,5 +1,10 @@
 import React from 'react';
 import { bdcApplicants } from '../constants';
+import { AiOutlineDollarCircle } from 'react-icons/ai';
+import { AiOutlineCreditCard } from 'react-icons/ai';
+
+import { AiOutlineCluster } from 'react-icons/ai';
+import { AiOutlinePartition } from 'react-icons/ai';
 
 const BDCApplicants = () => {
     const applicant = bdcApplicants[0];
@@ -23,15 +28,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <svg className='w-10 h-10 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
-                                <polygon
-                                    strokeWidth='3'
-                                    strokeLinecap='round'
-                                    strokeLinejoin='round'
-                                    fill='none'
-                                    points='29 13 14 29 25 29 23 39 38 23 27 23'
-                                />
-                            </svg>
+                            <AiOutlineDollarCircle className='w-7 h-7 text-green-400' />
                         </div>
                     </div>
                     <div>
@@ -42,15 +39,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <svg className='w-10 h-10 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
-                                <polygon
-                                    strokeWidth='3'
-                                    strokeLinecap='round'
-                                    strokeLinejoin='round'
-                                    fill='none'
-                                    points='29 13 14 29 25 29 23 39 38 23 27 23'
-                                />
-                            </svg>
+                            <AiOutlineCreditCard className='w-7 h-7 text-green-400' />
                         </div>
                     </div>
                     <div>
@@ -61,15 +50,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <svg className='w-10 h-10 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
-                                <polygon
-                                    strokeWidth='3'
-                                    strokeLinecap='round'
-                                    strokeLinejoin='round'
-                                    fill='none'
-                                    points='29 13 14 29 25 29 23 39 38 23 27 23'
-                                />
-                            </svg>
+                            <AiOutlineCluster className='w-7 h-7 text-green-400' />
                         </div>
                     </div>
                     <div>
@@ -80,15 +61,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <svg className='w-10 h-10 text-green-400' stroke='currentColor' viewBox='0 0 52 52'>
-                                <polygon
-                                    strokeWidth='3'
-                                    strokeLinecap='round'
-                                    strokeLinejoin='round'
-                                    fill='none'
-                                    points='29 13 14 29 25 29 23 39 38 23 27 23'
-                                />
-                            </svg>
+                            <AiOutlinePartition className='w-7 h-7 text-green-400' />
                         </div>
                     </div>
                     <div>

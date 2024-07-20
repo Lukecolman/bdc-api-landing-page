@@ -14,17 +14,23 @@ const Footer = () => {
                     <p className='text-base font-bold tracking-wide text-gray-900'>{footer.contacto.title}</p>
                     {/* PHONE */}
                     <div>
-                        <p className='mr-1 text-gray-800'>{footer.contacto.telefono.label}</p>
-                        <p className='transition-colors duration-300 text-green-400 hover:text-green-800'>
-                            {footer.contacto.telefono.info}
-                        </p>
+                        <p className='mr-1 text-gray-800'>{footer.contacto.phone.label}</p>
+                        <a
+                            href={footer.contacto.phone.url}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='transition-colors duration-300 text-bdc-green hover:text-bdc-green-400'>
+                            {footer.contacto.phone.info}
+                        </a>
                     </div>
                     {/* EMAIL */}
                     <div>
                         <p className='mr-1 text-gray-800'>{footer.contacto.email.label}</p>
                         <a
                             href={footer.contacto.email.url}
-                            className='transition-colors duration-300 text-green-400 hover:text-green-800'>
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='transition-colors duration-300 text-bdc-green hover:text-bdc-green-400'>
                             {footer.contacto.email.info}
                         </a>
                     </div>
@@ -35,7 +41,7 @@ const Footer = () => {
                             href={footer.contacto.address.url}
                             target='_blank'
                             rel='noopener noreferrer'
-                            className='transition-colors duration-300 text-green-400 hover:text-green-800'>
+                            className='transition-colors duration-300 text-bdc-green hover:text-bdc-green-400'>
                             {footer.contacto.address.info}
                         </a>
                     </div>
@@ -45,7 +51,9 @@ const Footer = () => {
                     <div className='flex items-center mt-1 space-x-3'>
                         <a
                             href={socialMedia.instagram.url}
-                            className='text-gray-500 transition-colors duration-300 hover:text-green-400'>
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-gray-500 transition-colors duration-300 hover:text-bdc-green'>
                             <svg viewBox='0 0 30 30' fill='currentColor' className='h-6'>
                                 <circle cx='15' cy='15' r='4' />
                                 <path d='M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z' />
@@ -54,7 +62,9 @@ const Footer = () => {
 
                         <a
                             href={socialMedia.linkedin.url}
-                            className='text-gray-500 transition-colors duration-300 hover:text-green-400'>
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            className='text-gray-500 transition-colors duration-300 hover:text-bdc-green'>
                             <svg
                                 xmlns='http://www.w3.org/2000/svg'
                                 fill='currentColor'
@@ -73,14 +83,14 @@ const Footer = () => {
                     <li>
                         <a
                             href={footer.privacy.url}
-                            className='text-sm text-gray-600 transition-colors duration-300 hover:text-green-400'>
+                            className='text-sm text-gray-600 transition-colors duration-300 hover:text-bdc-green'>
                             {footer.privacy.label}
                         </a>
                     </li>
                     <li>
                         <a
                             href={footer.termsAndConditions.url}
-                            className='text-sm text-gray-600 transition-colors duration-300 hover:text-green-400'>
+                            className='text-sm text-gray-600 transition-colors duration-300 hover:text-bdc-green'>
                             {footer.termsAndConditions.label}
                         </a>
                     </li>

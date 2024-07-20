@@ -199,27 +199,22 @@ export const form = {
     buttonText: 'Enviar',
 };
 
-
 // FOOTER
 export const socialMedia = {
     title: 'Social',
-    instagram: [
-        {
-            url: 'https://www.instagram.com/banco.de.comercio/',
-        },
-    ],
-    linkedin: [
-        {
-            url: 'https://www.linkedin.com/company/35467846/admin/',
-        },
-    ],
-};
+    instagram: {
+        url: 'https://www.instagram.com/banco.de.comercio/',
+    },
 
+    linkedin: {
+        url: 'https://www.linkedin.com/company/35467846/admin/',
+    },
+};
 
 export const footer = {
     contacto: {
         title: 'Contacto',
-        telefono: {
+        phone: {
             label: 'Teléfono ',
             info: '1131560000',
             url: 'https://api.whatsapp.com/send?phone=541131560000',

@@ -1,4 +1,4 @@
-import { Navbar, Hero, Facilities, Integration, Solutions, BDCApplicants, Form, Footer } from './components/index';
+import { Navbar, Hero, Opportunities, Integration, Solutions, BDCApplicants, Form, Footer } from './components/index';
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
         <>
             <Navbar />
             <Hero />
-            <Facilities />
+            <Opportunities />
             <Integration />
             <Solutions />
             <BDCApplicants />

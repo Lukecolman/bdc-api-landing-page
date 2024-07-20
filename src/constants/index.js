@@ -42,10 +42,10 @@ export const heroBanner = {
     },
 };
 
-// FACILITIES
-export const facilities = {
-    title: 'Facilidades para tu negocio',
-    subtitle: '¿En qué facilita el desarrollo de mi negocio tener BDC Conecta?',
+// OPPORTUNITIES
+export const opportunities = {
+    title: 'Oportunidades para tu negocio',
+    subtitle: '¿En qué facilita el desarrollo de mi empresa contar con BDC Conecta?',
     items: [
         {
             id: 1,
@@ -93,7 +93,7 @@ export const integration = {
         {
             id: 1,
             icon: '',
-            content: 'Entendemos tu marca, comprendiendo las particularidades de tu modelo de negocio.',
+            content: 'Nos reunimos y juntos comprendemos las particularidades de tu modelo de negocio   ',
         },
         {
             id: 2,
@@ -193,6 +193,14 @@ export const bdcApplicants = [
     },
 ];
 
+//FORM
+export const form = {
+    title: 'Contactanos',
+    buttonText: 'Enviar',
+};
+
+
+// FOOTER
 export const socialMedia = {
     title: 'Social',
     instagram: [
@@ -207,26 +215,22 @@ export const socialMedia = {
     ],
 };
 
-export const form = {
-    title: 'Contactanos',
-    buttonText: 'Enviar',
-};
 
 export const footer = {
     contacto: {
         title: 'Contacto',
         telefono: {
-            label: 'Teléfono: ',
-            info: '+54 5554-5800',
-            url: '',
+            label: 'Teléfono ',
+            info: '1131560000',
+            url: 'https://api.whatsapp.com/send?phone=541131560000',
         },
         email: {
-            label: 'Email: ',
+            label: 'Email',
             info: 'bdc.conecta@bancodecomercio.com.ar',
             url: 'mailto:bdc.conecta@bancodecomercio.com.ar',
         },
         address: {
-            label: 'Dirección: ',
+            label: 'Dirección ',
             info: 'Sarmiento 356, CABA',
             url: 'https://maps.app.goo.gl/yjo4f5zQaHDPUiiK6',
         },

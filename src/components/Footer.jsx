@@ -13,14 +13,14 @@ const Footer = () => {
                 <div className='space-y-2 text-sm'>
                     <p className='text-base font-bold tracking-wide text-gray-900'>{footer.contacto.title}</p>
                     {/* PHONE */}
-                    <div className='flex'>
+                    <div>
                         <p className='mr-1 text-gray-800'>{footer.contacto.telefono.label}</p>
                         <p className='transition-colors duration-300 text-green-400 hover:text-green-800'>
                             {footer.contacto.telefono.info}
                         </p>
                     </div>
                     {/* EMAIL */}
-                    <div className='flex'>
+                    <div>
                         <p className='mr-1 text-gray-800'>{footer.contacto.email.label}</p>
                         <a
                             href={footer.contacto.email.url}
@@ -29,7 +29,7 @@ const Footer = () => {
                         </a>
                     </div>
                     {/* ADDRESS */}
-                    <div className='flex'>
+                    <div>
                         <p className='mr-1 text-gray-800'>{footer.contacto.address.label}</p>
                         <a
                             href={footer.contacto.address.url}

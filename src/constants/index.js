@@ -195,7 +195,7 @@ export const bdcApplicants = [
 
 //FORM
 export const form = {
-    title: 'Contactanos',
+    title: 'Envíanos tu consulta',
     buttonText: 'Enviar',
 };
 

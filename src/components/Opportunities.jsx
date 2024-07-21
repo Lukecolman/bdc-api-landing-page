@@ -20,37 +20,37 @@ const Opportunities = () => {
             </div>
             <div className='grid gap-8 mb-8 md:grid-cols-2 lg:grid-cols-3'>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                    <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineBarChart className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{opportunities.items[0].content}</p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                    <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineThunderbolt className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{opportunities.items[1].content}</p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                    <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineSearch className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{opportunities.items[2].content}</p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                    <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineLock className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{opportunities.items[3].content}</p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                    <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineControl className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{opportunities.items[4].content}</p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>
-                    <div className='flex items-center justify-center w-12 h-12 mb-5 rounded-full shadow-md'>
+                    <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineSafety className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <p className='mb-2 font-bold leading-snug text-lg'>{opportunities.items[5].content}</p>

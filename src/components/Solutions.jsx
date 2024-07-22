@@ -5,7 +5,7 @@ const Solutions = () => {
     return (
         <>
             <div className='font-inter mt-24 max-w-xl mb-10 mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
-                <h2 className='max-w-lg mb-6 text-3xl font-extrabold leading-tight tracking-tight text-gray-900 sm:text-6xl mx-auto text-balance'>
+                <h2 className='max-w-lg mb-6 text-3xl font-extrabold leading-tight tracking-tight text-bdc-gray-900 sm:text-6xl mx-auto text-balance'>
                     {solutions.title}
                 </h2>
                 {/* <p className="text-base text-gray-700 md:text-lg">
@@ -13,36 +13,36 @@ const Solutions = () => {
       </p> */}
             </div>
             {/* SOLUTION 1 */}
-            <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14 bg-green-500'>
+            <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14'>
                 <div className='grid gap-10 lg:grid-cols-2'>
                     <div>
                         <img
-                            className='object-cover w-full h-56 rounded shadow-lg sm:h-96'
+                            className='object-cover w-full h-56 rounded-3xl shadow-lg sm:h-[420px] sm:w-[520px] sm:mx-auto'
                             src={solutions.items[0].img}
                             alt={solutions.items[0].alt}
                         />
                     </div>
 
                     <div className='lg:pl-14 flex flex-col justify-center'>
-                        <h5 className='mb-4 text-4xl font-extrabold leading-none'>{solutions.items[0].title}</h5>
-                        <p className='mb-6 text-gray-900 text-base text-balance'>{solutions.items[0].content}</p>
+                        <h5 className='mb-4 text-5xl font-extrabold leading-none'>{solutions.items[0].title}</h5>
+                        <p className='mb-6 text-bdc-gray-900 text-xl text-balance'>{solutions.items[0].content}</p>
                     </div>
                 </div>
             </div>
             {/* SOLUTION 2 */}
-            <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0 bg-red-500'>
-                <div className='grid gap-10 lg:grid-cols-2 bg-violet-300'>
+            <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0z'>
+                <div className='grid gap-10 lg:grid-cols-2'>
                     <div>
                         <img
-                            className='object-cover w-full h-56 rounded shadow-lg sm:h-full'
+                            className='object-cover w-full h-56 rounded-3xl shadow-lg sm:h-[420px] sm:w-[520px] sm:mx-auto'
                             src={solutions.items[1].img}
                             alt={solutions.items[1].alt}
                         />
                     </div>
 
                     <div className='lg:pl-14 flex flex-col justify-center'>
-                        <h5 className='mb-4 text-4xl font-extrabold leading-none'>{solutions.items[1].title}</h5>
-                        <p className='mb-6 text-gray-900 text-base text-balance'>{solutions.items[1].content}</p>
+                        <h5 className='mb-4 text-5xl font-extrabold leading-none'>{solutions.items[1].title}</h5>
+                        <p className='mb-6 text-bdc-gray-900 text-xl text-balance'>{solutions.items[1].content}</p>
                     </div>
                 </div>
             </div>
@@ -51,15 +51,15 @@ const Solutions = () => {
                 <div className='grid gap-10 lg:grid-cols-2'>
                     <div>
                         <img
-                            className='object-cover w-full h-56 rounded shadow-lg sm:h-96'
+                            className='object-cover w-full h-56 rounded-3xl shadow-lg sm:h-[420px] sm:w-[520px] sm:mx-auto'
                             src={solutions.items[2].img}
                             alt={solutions.items[2].alt}
                         />
                     </div>
 
                     <div className='lg:pl-14 flex flex-col justify-center'>
-                        <h5 className='mb-4 text-4xl font-extrabold leading-none'>{solutions.items[2].title}</h5>
-                        <p className='mb-6 text-gray-900 text-base text-balance'>{solutions.items[2].content}</p>
+                        <h5 className='mb-4 text-5xl text-bdc-green-500 font-extrabold leading-none'>{solutions.items[2].title}</h5>
+                        <p className='mb-6 text-bdc-gray-900 text-xl text-balance'>{solutions.items[2].content}</p>
                     </div>
                 </div>
             </div>

@@ -8,7 +8,7 @@ const Form = () => {
             <div className='px-3.5 py-16 mx-auto rounded-xl w-full md:max-w-screen-xl md:px-24 lg:px-8 lg:py-24 bg-gradient-to-t from-bdc-green-200 via-bdc-green-400 to-bdc-green-600'>
                 <div className='flex flex-col items-center justify-between'>
                     <div className='w-full text-center '>
-                        <h2 className='max-w-lg mx-auto mb-6 text-3xl font-semibold  sm:text-5xl sm:leading-none text-white'>
+                        <h2 className='max-w-lg mx-auto mb-10 text-3xl font-semibold  sm:text-5xl sm:leading-none text-white'>
                             {form.title}
                         </h2>
                         {/* <p className='max-w-xl mb-4 text-base text-gray-400 md:text-lg'>

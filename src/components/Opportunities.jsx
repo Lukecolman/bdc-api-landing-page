@@ -16,7 +16,7 @@ const Opportunities = () => {
                 <h2 className='max-w-2xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 md:max-w-xl sm:text-6xl md:mx-auto text-pretty'>
                     {opportunities.title}
                 </h2>
-                <p className='text-base text-bdc-gray-700 md:text-lg'>{opportunities.subtitle}</p>
+                <p className='text-base text-bdc-gray-700 md:text-xl'>{opportunities.subtitle}</p>
             </div>
             <div className='grid gap-8 mb-8 md:grid-cols-2 lg:grid-cols-3'>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg'>

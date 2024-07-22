@@ -3,7 +3,7 @@ import { heroBanner } from '../constants';
 
 const Hero = () => {
     return (
-        <div className='flex font-inter flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-24 md:px-0 shadow-2xl shadow-bdc-gray-200 overflow-hidden  gradien relative'>
+        <div className='flex font-inter flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-14 md:px-0 shadow-2xl shadow-bdc-gray-200 overflow-hidden  gradien relative'>
             <div className='flex flex-col items-center max-w-7xl md:px-8'>
                 {' '}
                 <div>
@@ -11,12 +11,12 @@ const Hero = () => {
               Brand new
             </p> */}
                 </div>
-                <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-7xl md:mb-12 flex flex-col gap-2 items-center '>
-                    <h2
+                <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-7xl flex flex-col items-center '>
+                    <h1
                         className=' mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto text-balance'
                         dangerouslySetInnerHTML={{ __html: heroBanner.title }}
                     />
-                    <p className='text-base text-gray-700 md:text-base max-w-5xl text-balance'>{heroBanner.content}</p>
+                    <p className='text-base text-gray-700 md:text-xl max-w-5xl text-balance'>{heroBanner.content}</p>
                 </div>
                 <a
                     href={heroBanner.button.link}

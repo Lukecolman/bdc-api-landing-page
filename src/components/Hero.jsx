@@ -3,7 +3,7 @@ import { heroBanner } from '../constants';
 
 const Hero = () => {
     return (
-        <div className='flex font-inter flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-14 md:px-0 shadow-2xl shadow-bdc-gray-200 overflow-hidden  gradien relative'>
+        <div className='flex font-inter flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-14 md:px-0  overflow-hidden  gradien relative'>
             <div className='flex flex-col items-center max-w-7xl md:px-8'>
                 {' '}
                 <div>

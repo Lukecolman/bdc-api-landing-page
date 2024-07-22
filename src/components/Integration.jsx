@@ -4,6 +4,7 @@ import { AiOutlineBulb, AiOutlineSolution, AiOutlineApi, AiOutlineRocket } from 
 
 const Integration = () => {
     return (
+        <section className='w-full bg-bdc-gray-100/25'>
         <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
             <div className='flex flex-col pl-16 justify-between items-center lg:flex-row'>
                 {/* TITLE */}
@@ -26,7 +27,7 @@ const Integration = () => {
                 </div>
                 <div className='flex flex-col shadow-2xl md:max-w-xl lg:max-w-md'>
                     {/* ITEM 1 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400'>
                         <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
                             <AiOutlineBulb className='w-8 h-8 text-bdc-green-300' />
                         </div>
@@ -35,7 +36,7 @@ const Integration = () => {
                         </p>
                     </div>
                     {/* ITEM 2 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400'>
                         <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
                             <AiOutlineSolution className='w-8 h-8 text-bdc-green-300' />
                         </div>
@@ -44,7 +45,7 @@ const Integration = () => {
                         </p>
                     </div>
                     {/* ITEM 3 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400'>
                         <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
                             <AiOutlineApi className='w-8 h-8 text-bdc-green-300' />
                         </div>
@@ -53,7 +54,7 @@ const Integration = () => {
                         </p>
                     </div>
                     {/* ITEM 4 */}
-                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 transition-all group hover:bg-bdc-green-400'>
+                    <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400'>
                         <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
                             <AiOutlineRocket className='w-8 h-8 text-bdc-green-300' />
                         </div>
@@ -64,6 +65,7 @@ const Integration = () => {
                 </div>
             </div>
         </div>
+        </section>
     );
 };
 

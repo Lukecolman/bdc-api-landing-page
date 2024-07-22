@@ -15,12 +15,15 @@ const Solutions = () => {
             {/* SOLUTION 1 */}
             <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14'>
                 <div className='grid gap-10 lg:grid-cols-2'>
-                    <div>
+                    <div className='relative'>
                         <img
                             className='object-cover w-full h-56 rounded-3xl shadow-lg sm:h-[420px] sm:w-[520px] sm:mx-auto'
                             src={solutions.items[0].img}
                             alt={solutions.items[0].alt}
                         />
+                                               <div
+    class="absolute h-96 w-96 -z-10 top-0 right-0 rounded-full bg-gradient-to-b from-bdc-green-500  to-bdc-blue-500 opacity-40 blur-3xl"
+  />
                     </div>
 
                     <div className='lg:pl-14 flex flex-col justify-center'>
@@ -30,14 +33,18 @@ const Solutions = () => {
                 </div>
             </div>
             {/* SOLUTION 2 */}
-            <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-0 lg:py-0z'>
+            <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14'>
                 <div className='grid gap-10 lg:grid-cols-2'>
-                    <div>
+                    <div className='relative'>
                         <img
-                            className='object-cover w-full h-56 rounded-3xl shadow-lg sm:h-[420px] sm:w-[520px] sm:mx-auto'
+                            className='object-cover w-full h-56 rounded-3xl shadow-lg sm:h-[420px] sm:w-[520px] sm:mx-auto z-50 '
                             src={solutions.items[1].img}
                             alt={solutions.items[1].alt}
                         />
+                       <div
+    class="absolute h-96 w-96 -z-10 top-0 rounded-full bg-gradient-to-r from-bdc-green-500  to-bdc-blue-500 opacity-40 blur-3xl"
+  />
+
                     </div>
 
                     <div className='lg:pl-14 flex flex-col justify-center'>
@@ -49,12 +56,15 @@ const Solutions = () => {
             {/* SOLUTION 3 */}
             <div className='font-inter px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-14'>
                 <div className='grid gap-10 lg:grid-cols-2'>
-                    <div>
+                    <div className='relative'>
                         <img
                             className='object-cover w-full h-56 rounded-3xl shadow-lg sm:h-[420px] sm:w-[520px] sm:mx-auto'
                             src={solutions.items[2].img}
                             alt={solutions.items[2].alt}
                         />
+                    <div
+    class="absolute h-96 w-96 -z-10 bottom-0 right-0 rounded-full bg-gradient-to-r from-bdc-green-500  to-bdc-blue-500 opacity-50 blur-3xl"
+  />
                     </div>
 
                     <div className='lg:pl-14 flex flex-col justify-center'>

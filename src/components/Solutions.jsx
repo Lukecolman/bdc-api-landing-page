@@ -5,9 +5,9 @@ const Solutions = () => {
     return (
         <>
             <div className='font-inter mt-24 max-w-xl mb-10 mx-auto sm:text-center lg:max-w-2xl md:mb-12'>
-                <h2 className='max-w-lg mb-6 text-3xl font-extrabold leading-tight tracking-tight text-bdc-gray-900 sm:text-6xl mx-auto text-balance'>
-                    {solutions.title}
-                </h2>
+                <h2 className='max-w-lg mb-6 text-3xl font-extrabold leading-tight tracking-tight text-bdc-gray-900 sm:text-6xl mx-auto text-balance'dangerouslySetInnerHTML={{ __html: solutions.title }}/>
+                    {/* {solutions.title} */}
+                {/* </h2> */}
                 {/* <p className="text-base text-gray-700 md:text-lg">
         content
       </p> */}
@@ -58,7 +58,9 @@ const Solutions = () => {
                     </div>
 
                     <div className='lg:pl-14 flex flex-col justify-center'>
-                        <h5 className='mb-4 text-5xl text-bdc-green-500 font-extrabold leading-none'>{solutions.items[2].title}</h5>
+                        <h5 className='mb-4 text-5xl font-extrabold leading-none'>
+                            {solutions.items[2].title}
+                        </h5>
                         <p className='mb-6 text-bdc-gray-900 text-xl text-balance'>{solutions.items[2].content}</p>
                     </div>
                 </div>

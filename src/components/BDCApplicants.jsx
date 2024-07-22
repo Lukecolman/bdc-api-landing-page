@@ -17,9 +17,7 @@ const BDCApplicants = () => {
           Brand new
         </p>
       </div> */}
-                <h2 className='max-w-7xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:text-6xl md:mx-auto text-balance '>
-                    {applicant.title}
-                </h2>
+                <h2 className='max-w-7xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:text-6xl md:mx-auto text-balance' dangerouslySetInnerHTML={{ __html: applicant.title }}/>
                 <p className='max-w-2xl mx-auto text-base text-gray-700 md:text-lg  text-pretty'>
                     {applicant.subtitle}
                 </p>

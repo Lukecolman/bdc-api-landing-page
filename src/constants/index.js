@@ -44,7 +44,7 @@ export const heroBanner = {
 
 // OPPORTUNITIES
 export const opportunities = {
-    title: 'Oportunidades para tu negocio',
+    title: 'Oportunidades para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">tu negocio</span>',
     subtitle: '¿En qué facilita el desarrollo de mi empresa contar con BDC Conecta?',
     items: [
         {
@@ -87,7 +87,6 @@ export const opportunities = {
 
 // INTEGRATION
 export const integration = {
-    // title: '¿Cómo es el proceso para integrar BDC Conecta?',
     title: '¿Cómo es el proceso para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">integrar BDC Conecta?</span>',
     items: [
         {
@@ -115,7 +114,10 @@ export const integration = {
 
 // SOLUTIONS
 export const solutions = {
-    title: 'Soluciones de BDC Conecta',
+    // title: 'Soluciones de BDC Conecta',
+    title: '<span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">Soluciones de BDC Conecta</span>',
+
+    
     items: [
         {
             id: 1,
@@ -151,7 +153,7 @@ export const solutions = {
 // BDC APPLICANTS
 export const bdcApplicants = [
     {
-        title: '¿Quiénes ya aplicaron BDC Conecta a su modelo de negocio?',
+        title: '¿Quiénes ya aplicaron BDC Conecta a su <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">modelo de negocio?</span>',
         subtitle:
             'Nuestro universo de BDC Conecta nos permite ir directo a la resolución o mejora de tus procesos específicos, como ya lo hicimos con:',
         item1: [

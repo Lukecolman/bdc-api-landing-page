@@ -3,11 +3,11 @@ import { form } from '../constants';
 
 const Form = () => {
     return (
-        <div className='font-inter overflow-hidden md:px-8 bg-bdc-gray-200'>
-            <div className='px-3.5 py-16 mx-auto  md:max-w-full  md:px-24 lg:px-8 lg:py-20 '>
+        <div className='font-inter overflow-hidden md:px-10 mt-20 bg-bdc-green-500 bg-gradient-to-br from-bdc-green-50 via-bdc-green to-bdc-green-500'>
+            <div className='px-3.5 py-16 mx-auto rounded-xl w-full md:max-w-screen-xl md:px-24 lg:px-8 lg:py-24'>
                 <div className='flex flex-col items-center justify-between'>
                     <div className='w-full text-center '>
-                        <h2 className='max-w-lg mx-auto mb-6 text-3xl font-semibold  sm:text-5xl sm:leading-none'>
+                        <h2 className='max-w-lg mx-auto mb-10 text-3xl font-semibold  sm:text-5xl sm:leading-none text-white'>
                             {form.title}
                         </h2>
                         {/* <p className='max-w-xl mb-4 text-base text-gray-400 md:text-lg'>
@@ -21,7 +21,7 @@ const Form = () => {
                                             placeholder='Nombre y Apellido'
                                             required
                                             type='text'
-                                            className='flex-grow w-full h-9 px-3.5  transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-400 focus:outline-none focus:shadow-outline'
+                                            className='flex-grow w-full h-9 px-3.5 transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white '
                                             id='name'
                                             name='name'
                                         />
@@ -30,7 +30,7 @@ const Form = () => {
                                             placeholder='Email'
                                             required
                                             type='email'
-                                            className='flex-grow w-full h-9 px-3.5  transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-400 focus:outline-none focus:shadow-outline'
+                                            className='flex-grow w-full h-9 px-3.5 transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white required'
                                             id='email'
                                             name='email'
                                         />
@@ -39,7 +39,7 @@ const Form = () => {
                                             placeholder='Teléfono'
                                             required
                                             type='tel'
-                                            className='flex-grow w-full h-9 px-3.5  transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-400 focus:outline-none focus:shadow-outline'
+                                            class='flex-grow w-full h-9 px-3.5 transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white required'
                                             id='phone'
                                             name='phone'
                                         />
@@ -48,32 +48,33 @@ const Form = () => {
                                             placeholder='CUIT'
                                             required
                                             type='text'
-                                            className='flex-grow w-full h-9 px-3.5  transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-400 focus:outline-none focus:shadow-outline'
+                                            className='flex-grow w-full h-9 px-3.5 transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white required'
                                             id='cuit'
                                             name='cuit'
                                         />
-                                    </div>
-                                    <input
-                                        placeholder='Razón Social'
-                                        required
-                                        type='text'
-                                        className='flex-grow w-full h-9 px-3.5  transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-400 focus:outline-none focus:shadow-outline mt-3'
-                                        id='razonSocial'
-                                        name='razonSocial'
-                                    />
 
-                                    <textarea
-                                        placeholder='Solución de tu interés'
-                                        required
-                                        className='flex-grow w-full h-9 p-3.5  transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-green-400 focus:outline-none focus:shadow-outline mt-3 min-h-20'
-                                        id='message'
-                                        name='message'
-                                    />
+                                        <input
+                                            placeholder='Razón Social'
+                                            required
+                                            type='text'
+                                            className='col-span-2 h-9 px-3.5 transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white required'
+                                            id='razonSocial'
+                                            name='razonSocial'
+                                        />
+
+                                        <textarea
+                                            placeholder='Solución de tu interés'
+                                            required
+                                            className='col-span-2 h-9 p-3.5  transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white min-h-20 resize-none'
+                                            id='message'
+                                            name='message'
+                                        />
+                                    </div>
                                 </div>
                                 <div className='mt-6 mb-2 sm:mb-4'>
                                     <button
                                         type='submit'
-                                        className='inline-flex items-center justify-center w-full h-9 px-6 font-bold tracking-wide text-black transition duration-200 rounded shadow-md bg-green-400 hover:bg-green-700 focus:shadow-outline focus:outline-none'>
+                                        className='inline-flex items-center justify-center w-full h-10 px-6 font-bold tracking-wide text-bdc-gray-800 transition duration-200 rounded shadow-md bg-white focus:shadow-outline focus:outline-none'>
                                         {form.buttonText}
                                     </button>
                                 </div>

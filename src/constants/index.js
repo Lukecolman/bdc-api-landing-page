@@ -37,15 +37,15 @@ export const heroBanner = {
         link: '#',
     },
     imageUrl: {
-        img: 'https://picsum.photos/1065/538',
+        img: '/images/heroBanner.jpg',
         alt: '',
     },
 };
 
-// FACILITIES
-export const facilities = {
-    title: 'Facilidades para tu negocio',
-    subtitle: '¿En qué facilita el desarrollo de mi negocio tener BDC Conecta?',
+// OPPORTUNITIES
+export const opportunities = {
+    title: 'Oportunidades para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">tu negocio</span>',
+    subtitle: '¿En qué facilita el desarrollo de mi empresa contar con BDC Conecta?',
     items: [
         {
             id: 1,
@@ -87,13 +87,12 @@ export const facilities = {
 
 // INTEGRATION
 export const integration = {
-    // title: '¿Cómo es el proceso para integrar BDC Conecta?',
     title: '¿Cómo es el proceso para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">integrar BDC Conecta?</span>',
     items: [
         {
             id: 1,
             icon: '',
-            content: 'Entendemos tu marca, comprendiendo las particularidades de tu modelo de negocio.',
+            content: 'Nos reunimos y juntos comprendemos las particularidades de tu modelo de negocio   ',
         },
         {
             id: 2,
@@ -115,11 +114,14 @@ export const integration = {
 
 // SOLUTIONS
 export const solutions = {
-    title: 'Soluciones de BDC Conecta',
+    // title: 'Soluciones de BDC Conecta',
+    title: '<span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">Soluciones de BDC Conecta</span>',
+
+    
     items: [
         {
             id: 1,
-            img: 'https://picsum.photos/588/384',
+            img: '/images/cobranza-pagos.jpg',
             alt: '',
             title: 'Cobranzas y Pagos',
             content:
@@ -127,7 +129,7 @@ export const solutions = {
         },
         {
             id: 2,
-            img: 'https://picsum.photos/588/385',
+            img: '/images/billetera-virtual.jpg',
             alt: '',
             title: 'Billetera Virtual',
             content:
@@ -135,7 +137,7 @@ export const solutions = {
         },
         {
             id: 3,
-            img: 'https://picsum.photos/588/383',
+            img: '/images/informacion-cuenta.jpg',
             alt: '',
             title: 'Información de la cuenta',
             content:
@@ -151,7 +153,7 @@ export const solutions = {
 // BDC APPLICANTS
 export const bdcApplicants = [
     {
-        title: '¿Quiénes ya aplicaron BDC Conecta a su modelo de negocio?',
+        title: '¿Quiénes ya aplicaron BDC Conecta a su <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">modelo de negocio?</span>',
         subtitle:
             'Nuestro universo de BDC Conecta nos permite ir directo a la resolución o mejora de tus procesos específicos, como ya lo hicimos con:',
         item1: [
@@ -160,7 +162,7 @@ export const bdcApplicants = [
                 icon: '',
                 title: 'PSP',
                 content:
-                    'Nuestro universo de BDC Conecta nos permite ir directo a la resolución o mejora de tus procesos específicos, como ya lo hicimos con:',
+                    'El cliente desarrolló su propia billetera virtual, desde la cual gestiona cobros y pagos masivos, creación de cuentas CVU a cuenta de terceros. También con esta solución financia a sus clientes. Todo esto le agiliza sus operaciones, ahorra costos operativos y tiempo y le permite cumplir con todas las normativas del BCRA.',
             },
         ],
         item2: [
@@ -187,46 +189,45 @@ export const bdcApplicants = [
                 icon: '',
                 title: 'Consorcios',
                 content:
-                    'El cliente desarrolló su propia billetera virtual, desde la cual gestiona cobros y pagos masivos, creación de cuentas CVU a cuenta de terceros. También con esta solución financia a sus clientes. Todo esto le agiliza sus operaciones, ahorra costos operativos y tiempo y le permite cumplir con todas las normativas del BCRA.',
+                    'Le permite identificar todos los depósitos o transferencias por medio del CVU de cada uno de los propietarios. Efectúa pagos a proveedores de forma masiva desde su tesorería. Ahorra costos y tiempo, simplificando la administración de los consorcios que administra.',
             },
         ],
     },
 ];
 
-export const socialMedia = {
-    title: 'Social',
-    instagram: [
-        {
-            url: 'https://www.instagram.com/banco.de.comercio/',
-        },
-    ],
-    linkedin: [
-        {
-            url: 'https://www.linkedin.com/company/35467846/admin/',
-        },
-    ],
+//FORM
+export const form = {
+    title: 'Envíanos tu consulta',
+    buttonText: 'Enviar',
 };
 
-export const form = {
-    title: 'Contactanos',
-    buttonText: 'Enviar',
+// FOOTER
+export const socialMedia = {
+    title: 'Social',
+    instagram: {
+        url: 'https://www.instagram.com/banco.de.comercio/',
+    },
+
+    linkedin: {
+        url: 'https://www.linkedin.com/company/35467846/admin/',
+    },
 };
 
 export const footer = {
     contacto: {
         title: 'Contacto',
-        telefono: {
-            label: 'Teléfono: ',
-            info: '+54 5554-5800',
-            url: '',
+        phone: {
+            label: 'Teléfono ',
+            info: '1131560000',
+            url: 'https://api.whatsapp.com/send?phone=541131560000',
         },
         email: {
-            label: 'Email: ',
+            label: 'Email',
             info: 'bdc.conecta@bancodecomercio.com.ar',
             url: 'mailto:bdc.conecta@bancodecomercio.com.ar',
         },
         address: {
-            label: 'Dirección: ',
+            label: 'Dirección ',
             info: 'Sarmiento 356, CABA',
             url: 'https://maps.app.goo.gl/yjo4f5zQaHDPUiiK6',
         },

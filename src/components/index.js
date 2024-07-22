@@ -1,7 +1,7 @@
 // SECTIONS
 import Navbar from "./Navbar";
 import Hero from "./Hero";
-import Facilities from "./Facilities.jsx"
+import Opportunities from "./Opportunities.jsx"
 import Integration from "./Integration.jsx"
 import Solutions from "./Solutions.jsx";
 import BDCApplicants from "./BDCApplicants.jsx";
@@ -15,7 +15,7 @@ export{
     // SECTIONS
     Navbar,
     Hero,
-    Facilities,
+    Opportunities,
     Integration,
     Solutions,
     BDCApplicants,

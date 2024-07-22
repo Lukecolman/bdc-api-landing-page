@@ -1,5 +1,5 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { bdc, navbar } from '../constants';
 
 const Navbar = () => {

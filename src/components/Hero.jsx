@@ -13,7 +13,7 @@ const Hero = () => {
                 </div>
                 <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-7xl flex flex-col items-center '>
                     <h1
-                        className=' mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto text-balance'
+                        className=' font-space mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto text-balance'
                         dangerouslySetInnerHTML={{ __html: heroBanner.title }}
                     />
                     <p className='text-base text-gray-700 md:text-xl max-w-5xl text-balance'>{heroBanner.content}</p>
@@ -35,10 +35,10 @@ const Hero = () => {
           />
             </div> */}
 
-            <div className=' flex w-full  items-center justify-center rounded-lg text-slate-300'>
+            <div className=' flex w-full  items-center justify-center rounded-lg text-slate-300 '>
                 <img
                     src={heroBanner.imageUrl.img}
-                    className='w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-2xl bg-green-500'
+                    className='w-full max-w-screen-sm mx-auto rounded-t-xl shadow-2xl md:w-auto lg:max-w-screen-lg bg-green-500'
                     alt={heroBanner.imageUrl.alt}
                 />
             </div>

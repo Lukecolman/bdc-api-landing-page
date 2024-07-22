@@ -37,7 +37,7 @@ export const heroBanner = {
         link: '#',
     },
     imageUrl: {
-        img: 'https://picsum.photos/1065/538',
+        img: '/images/heroBanner.jpg',
         alt: '',
     },
 };
@@ -121,7 +121,7 @@ export const solutions = {
     items: [
         {
             id: 1,
-            img: 'https://picsum.photos/588/851',
+            img: '/images/cobranza-pagos.jpg',
             alt: '',
             title: 'Cobranzas y Pagos',
             content:
@@ -129,7 +129,7 @@ export const solutions = {
         },
         {
             id: 2,
-            img: 'https://picsum.photos/686/852',
+            img: '/images/billetera-virtual.jpg',
             alt: '',
             title: 'Billetera Virtual',
             content:
@@ -137,7 +137,7 @@ export const solutions = {
         },
         {
             id: 3,
-            img: 'https://picsum.photos/588/383',
+            img: '/images/informacion-cuenta.jpg',
             alt: '',
             title: 'Información de la cuenta',
             content:

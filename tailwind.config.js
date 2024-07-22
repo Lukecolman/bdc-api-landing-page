@@ -5,6 +5,7 @@ export default {
         extend: {
             fontFamily: {
                 inter: ['Inter' , 'sans-serif'],
+                space: ['Space Grotesk', 'Inter', 'sans-serif'],
             },
             colors: {
               'bdc-green': {

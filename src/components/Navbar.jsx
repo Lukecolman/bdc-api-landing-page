@@ -1,9 +1,10 @@
 import React from 'react';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { bdc, navbar } from '../constants';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    // const sectionRef = useRef<HTMLDivElement | null>(null);
 
     return (
         <div className='font-inter px-4 py-5 mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 relative'>
@@ -17,11 +18,13 @@ const Navbar = () => {
                 {/* MENU */}
                 <ul className='hidden items-center  space-x-8 lg:flex'>
                     <li>
-                        <a
-                            href={navbar.soluciones.url}
+                        <button onClick={() => {
+                            sectionRef.current?.scrollIntoView()
+                        }}
+                            // href={navbar.soluciones.url}
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400'>
                             {navbar.integracion.title}
-                        </a>
+                        </button>
                     </li>
                     <li>
                         <a

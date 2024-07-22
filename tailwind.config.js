@@ -3,7 +3,10 @@ export default {
     content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
     theme: {
         extend: {
-
+            fontFamily: {
+                inter: ['Inter' , 'sans-serif'],
+                space: ['Space Grotesk', 'Inter', 'sans-serif'],
+            },
             colors: {
               'bdc-green': {
                   DEFAULT: '#1E9F47',

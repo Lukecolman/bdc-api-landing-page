@@ -13,12 +13,12 @@ const Integration = () => {
                 {/* TITLE */}
                 <div className='max-w-2xl pr-16'>
                     <h5
-                        className='mb-6 text-6xl font-extrabold leading-tight text-balance'
+                        className='mb-2 text-6xl font-extrabold leading-tight text-balance'
                         dangerouslySetInnerHTML={{ __html: integration.title }}
                     />
-                    {/* <p className="mb-6 text-gray-900">
-          CONTENIDO
-        </p> */}
+                     <p className="mb-6 text-base text-bdc-gray-700 md:text-xl text-balance">
+                     {integration.content}
+        </p> 
                     {/* <div className="flex items-center">
           <button
             type="submit"

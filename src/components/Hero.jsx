@@ -1,6 +1,8 @@
 import React from 'react';
 import { heroBanner } from '../constants';
 
+
+/* TODO: ADD EXTRA TEXT AT THE BOTTOM OF THE IMAGE IN THE HERO "imageFooter" */
 const Hero = () => {
     return (
         <div className='flex font-inter flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-14 md:px-0  overflow-hidden  gradien relative'>
@@ -13,10 +15,10 @@ const Hero = () => {
                 </div>
                 <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-7xl flex flex-col items-center '>
                     <h1
-                        className='mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto text-balance'
+                        className='mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto max-w-[900px]'
                         dangerouslySetInnerHTML={{ __html: heroBanner.title }}
                     />
-                    <p className='text-base text-gray-700 md:text-xl max-w-5xl text-balance'>{heroBanner.content}</p>
+                    <p className='text-base text-gray-700 md:text-xl max-w-3xl text-balance'>{heroBanner.content}</p>
                 </div>
                 <a
                     href={heroBanner.button.link}

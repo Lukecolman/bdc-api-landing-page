@@ -40,6 +40,7 @@ export const heroBanner = {
         img: '/images/heroBanner.jpg',
         alt: '',
     },
+    imageFooter: 'Integrá tu sistema de gestión y dale un giro disruptivo a la tesorería de tu negocio con nuestras soluciones tecnológicas de BDC Conecta. Esto te permite minimizar errores humanos y enfocarte en la mejor experiencia de tus usuarios. ',
 };
 
 // OPPORTUNITIES

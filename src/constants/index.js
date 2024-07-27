@@ -27,11 +27,11 @@ export const navbar = {
 
 // HERO BANNER
 export const heroBanner = {
-    title: 'Eficiencia en cobros y pagos de tu negocio con <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">BDC Conecta</span>',
+    title: 'Eficiencia en tus cobros y pagos con <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">BDC Conecta</span>',
     // contentTEST: "Transforma tu negocio con nuestras soluciones integradas. Mejora la eficiencia, seguridad y experiencia del cliente con BDC Conecta.",
     // contentTEST2: "Transforma tu negocio con BDC Conecta. Integra tu sistema de gestión y optimiza tus operaciones financieras con nuestras soluciones tecnológicas de APIs. Acelera tus procesos, reduce costos y maximiza la eficiencia.",
     content:
-        'Integrá tu sistema de gestión, acelerá tus cobros y pagos, y desbloqueá un nuevo nivel de eficiencia. Dale un giro disruptivo a tu negocio con nuestras soluciones tecnológicas de APIs BDC Conecta. Con nuestro sistema de APIs a medida, optimizás tiempos, reducís costos y maximizás recursos, llevando tu empresa a un nuevo modelo de administración y agilidad en tesorería.',
+        'Con nuestras APIs  optimizás tiempos, reducís costos y maximizás recursos, llevando tu empresa a un nuevo modelo de administración y agilidad en tesorería.',
     button: {
         text: 'Contactá un asesor',
         link: '#',
@@ -45,38 +45,44 @@ export const heroBanner = {
 // OPPORTUNITIES
 export const opportunities = {
     title: 'Oportunidades para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">tu negocio</span>',
-    subtitle: '¿En qué facilita el desarrollo de mi empresa contar con BDC Conecta?',
+    subtitle: '¿En qué facilita el desarrollo de mi empresa integrar BDC Conecta?',
     items: [
         {
             id: 1,
             icon: '',
-            content: 'Obtené información en tiempo real y detallada de todas tus operaciones.',
+            title: 'Facilidades Financieras',
+            content: 'Acelerá tu proceso de recaudación y facilitá tu conciliación bancaria',
         },
         {
             id: 2,
             icon: '',
-            content: 'Acelerá el proceso de recaudación realizando transacciones instantáneamente.',
+            title: 'Eficiencia y facilidad de uso',
+            content: 'Integrá sin dificulta con una experiencia fluida de validaciones rápidas e intuitivas en una sola solución',
         },
         {
             id: 3,
             icon: '',
+            title: 'Cumplimiento regulatorio',
             content:
-                'Identificá cada operación por cliente, producto o servicio, facilitando tu conciliación bancaria.',
+                'Cumplimiento normativo y garantizado en todas las operaciones',
         },
         {
             id: 4,
             icon: '',
-            content: 'Garantizá transacciones seguras tanto para tu empresa como para tus clientes.',
+            title: 'Control total',
+            content: 'Capturá con precisión todos los datos y validá la información con distintas fuentes al instante',
         },
         {
             id: 5,
             icon: '',
-            content: 'Soluciones que permiten un control total y la captura precisa de datos.',
+            title: 'Simplificación',
+            content: 'Unificamos distintas fuentes de información para validar datos y simplificarte tus procesos',
         },
         {
             id: 6,
             icon: '',
-            content: 'Cumplimiento normativo y seguridad garantizados en todas las operaciones.',
+            title: 'Prevención de Fraude',
+            content: 'Brindamos soluciones sólidas y comprobadas para prevenir fraudes y estadas para tu negocio y tus cliientes',
         },
     ],
     button: {
@@ -88,11 +94,12 @@ export const opportunities = {
 // INTEGRATION
 export const integration = {
     title: '¿Cómo es el proceso para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">integrar BDC Conecta?</span>',
+    content: 'Innovamos en el mercado de APIs hace más de 5 años, con la atención personalizada que nos caracteriza en cada etapa del proceso',
     items: [
         {
             id: 1,
             icon: '',
-            content: 'Nos reunimos y juntos comprendemos las particularidades de tu modelo de negocio   ',
+            content: 'Nos reunimos para comprender las particularidades de tu negocio y enfocar las soluciones',
         },
         {
             id: 2,
@@ -102,7 +109,7 @@ export const integration = {
         {
             id: 3,
             icon: '',
-            content: 'Te ayudamos a integrar las APIs a tus procesos en conjunto con tu equipo.',
+            content: 'Te acompañamos en la integración de BDC Conecta junto a tu equipo.',
         },
         {
             id: 4,
@@ -124,24 +131,45 @@ export const solutions = {
             img: '/images/cobranza-pagos.jpg',
             alt: '',
             title: 'Cobranzas y Pagos',
-            content:
-                'Automatizá los pagos y cobros de tus clientes y proveedores, ahorrando tiempo y costos de gestión. Con BDC Conecta podés consultar y realizar transferencias a CBU, CVU y Alias, y gestionar proveedores de forma eficiente. Transforma la gestión de tus transacciones y llevá tu negocio al próximo nivel con nuestras soluciones tecnológicas.',
+            content:'Automatizá los pagos y cobros de tus clientes y proveedores, ahorrando tiempo y costos de gestión. Con Experiencia API, simplificás tus operaciones financieras:',
+            bullet:[
+                {
+                    1:'Realizá y consultá transferencias a CBU, CVU y Alias de manera rápida y segura.',
+                    2:'Administrá tus proveedores de forma eficiente y sin complicaciones.',
+                    3:'Transformá la gestión de tus transacciones, mejorando la eficiencia y reduciendo errores.',
+                },
+            ],
         },
         {
             id: 2,
             img: '/images/billetera-virtual.jpg',
             alt: '',
             title: 'Billetera Virtual',
-            content:
-                'Nuestra solución ofrece diversas funcionalidades para optimizar la gestión de las transacciones en tu billetera: altas y cambio de alias de CVU, consulta, envío y recepción de transferencias entre CVU/CBU, y notificaciones de crédito en CVU, y posibilidad de financiación a tus clientes.',
+            content:'Ofrecé diversas funcionalidades para optimizar la gestión de las transacciones en tu billetera:',
+            bullet:[
+                {
+                    1:'Altas y cambio de alias de CVU de manera sencilla.',
+                    2:'Consulta, envío y recepción de transferencias entre CVU y CBU.',
+                    3:'Recibí notificaciones instantáneas de créditos en CVU.',
+                    4:'Posibilitá la financiación directa a tus clientes.',
+                },
+            ],
         },
         {
             id: 3,
             img: '/images/informacion-cuenta.jpg',
             alt: '',
             title: 'Información de la cuenta',
-            content:
-                'Te permite gestionar integralmente las cuentas de tus clientes en BDC Conecta. Accedé a los movimientos de cuenta, consultá datos mediante alias, CBU o CVU, y validá la información asociada a cada uno. Identificá el origen de transferencias recibidas y obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',
+            content:'Simplificá la gestión de las cuentas de tus clientes con BDC Conecta:',
+            bullet:[
+                {
+                    1:'Consultá fácilmente los movimientos de cuentas.',
+                    2:'Obtené información mediante alias, CBU o CVU.',
+                    3:'Validá la información asociada a cada cuenta de forma precisa con nuestras diversas fuentes de información integradas.',
+                    4:'Identificá el origen de transferencias recibidas.',
+                    5:'Obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',
+                },
+            ],
         },
     ],
     button: {
@@ -160,36 +188,54 @@ export const bdcApplicants = [
             {
                 id: 1,
                 icon: '',
-                title: 'PSP',
+                title: 'PSPC, Fintech y Seguros',
                 content:
-                    'El cliente desarrolló su propia billetera virtual, desde la cual gestiona cobros y pagos masivos, creación de cuentas CVU a cuenta de terceros. También con esta solución financia a sus clientes. Todo esto le agiliza sus operaciones, ahorra costos operativos y tiempo y le permite cumplir con todas las normativas del BCRA.',
+                    'Permite a los clientes desarrollar su propia billetera virtual para gestionar cobros y pagos masivos, y crear cuentas CVU a nombre de terceros. Posibilita la financiación a sus clientes, agiliza operaciones, ahorra costos operativos y tiempo, y asegura el cumplimiento con todas las normativas del BCRA.',
             },
         ],
         item2: [
             {
                 id: 2,
                 icon: '',
-                title: 'Colegios, gimnasios y clubes',
+                title: 'Ecommerce y Empresas',
                 content:
-                    'Realizan cobros de tarjeta crédito y débito, pago masivo a proveedores automatizando procesos y reduciendo recursos, garantizando la optimización de tesorería.',
+                    'Identifica operaciones, clientes y tickets por medio de la creación de CVU. Gracias a la unificación de plataformas en una sola solución puede prevenir fraudes y agilizar todo el proceso de cobros y pagos evitando errores manuales.',
             },
         ],
         item3: [
             {
                 id: 3,
                 icon: '',
-                title: 'Salud',
+                title: 'Prepagas y Obras Sociales',
                 content:
-                    'Nuestro cliente puede realizar pagos masivos y programados a toda su nómina y proveedores, facilitando su gestión interna y externa. Recauda de manera ágil sus cuotas mensuales e identifica de manera precisa toda la información de las cuentas de sus asociados y proveedores.',
+                    'Efectúa pagos masivos y programados a toda su nómina y proveedores, facilitando su gestión interna y externa. Recauda de manera ágil sus cuotas mensuales e identifica de manera precisa toda la información de las cuentas de sus asociados y proveedores.',
             },
         ],
         item4: [
             {
                 id: 4,
                 icon: '',
+                title: 'Universidades y Colegios',
+                content:
+                    'Realiza cobros de tarjeta crédito y débito, pago masivo a proveedores automatizando procesos y reduciendo recursos, garantizando la optimización de tesorería. Esto facilitó la operatoria manual, garantizando una mejor experiencia para todos los usuarios.',
+            },
+        ],
+        item5: [
+            {
+                id: 5,
+                icon: '',
                 title: 'Consorcios',
                 content:
-                    'Le permite identificar todos los depósitos o transferencias por medio del CVU de cada uno de los propietarios. Efectúa pagos a proveedores de forma masiva desde su tesorería. Ahorra costos y tiempo, simplificando la administración de los consorcios que administra.',
+                    'Diferencia todos los depósitos o transferencias por medio del CVU de cada uno de los propietarios. Efectúa pagos a proveedores de forma masiva desde su tesorería. Ahorra costos y tiempo, simplificando la administración de los consorcios que administra.',
+            },
+        ],
+        item6: [
+            {
+                id: 6,
+                icon: '',
+                title: 'Clubes y Gimnasios',
+                content:
+                    'Reconoce con precisión los cobros y pagos por miembros y proveedores, automatizando procesos y proporcionando opciones de financiamiento a tus clientes.',
             },
         ],
     },
@@ -217,7 +263,7 @@ export const footer = {
     contacto: {
         title: 'Contacto',
         phone: {
-            label: 'Teléfono ',
+            label: 'Whatsapp ',
             info: '1131560000',
             url: 'https://api.whatsapp.com/send?phone=541131560000',
         },

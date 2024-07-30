@@ -9,15 +9,15 @@ export const bdc = {
 export const navbar = {
     integracion: {
         title: 'Integración',
-        url: '#',
+        url: 'https://docs.bdcconecta.com/',
     },
     soluciones: {
         title: 'Soluciones',
-        url: '#',
+        url: '#solutions',
     },
     contacto: {
         title: 'Contacto',
-        url: '#',
+        url: '#contact',
     },
     ctaMobile: {
         title: 'Contactá un asesor',

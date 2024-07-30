@@ -5,7 +5,7 @@ import { solutions } from "../constants";
 const Solutions = () => {
   return (
     <>
-      <div className="font-inter mt-24 max-w-xl mb-10 mx-auto sm:text-center lg:max-w-2xl md:mb-12">
+      <div className="font-inter mt-24 max-w-xl mb-10 mx-auto sm:text-center lg:max-w-2xl md:mb-12" id="solutions">
         <h2
           className="max-w-lg mb-6 text-3xl font-extrabold leading-tight tracking-tight text-bdc-gray-900 sm:text-6xl mx-auto text-balance"
           dangerouslySetInnerHTML={{ __html: solutions.title }}

@@ -34,13 +34,14 @@ export const heroBanner = {
         'Con nuestras APIs  optimizás tiempos, reducís costos y maximizás recursos, llevando tu empresa a un nuevo modelo de administración y agilidad en tesorería.',
     button: {
         text: 'Contactá un asesor',
-        link: '#',
+        url: '#contact',
     },
     imageUrl: {
         img: '/images/heroBanner.jpg',
         alt: '',
     },
-    imageFooter: 'Integrá tu sistema de gestión y dale un giro disruptivo a la tesorería de tu negocio con nuestras soluciones tecnológicas de BDC Conecta. Esto te permite minimizar errores humanos y enfocarte en la mejor experiencia de tus usuarios. ',
+    imageFooter:
+        'Integrá tu sistema de gestión y dale un giro disruptivo a la tesorería de tu negocio con nuestras soluciones tecnológicas de BDC Conecta. Esto te permite minimizar errores humanos y enfocarte en la mejor experiencia de tus usuarios. ',
 };
 
 // OPPORTUNITIES
@@ -58,14 +59,14 @@ export const opportunities = {
             id: 2,
             icon: '',
             title: 'Eficiencia y facilidad de uso',
-            content: 'Integrá sin dificulta con una experiencia fluida de validaciones rápidas e intuitivas en una sola solución',
+            content:
+                'Integrá sin dificulta con una experiencia fluida de validaciones rápidas e intuitivas en una sola solución',
         },
         {
             id: 3,
             icon: '',
             title: 'Cumplimiento regulatorio',
-            content:
-                'Cumplimiento normativo y garantizado en todas las operaciones',
+            content: 'Cumplimiento normativo y garantizado en todas las operaciones',
         },
         {
             id: 4,
@@ -83,19 +84,21 @@ export const opportunities = {
             id: 6,
             icon: '',
             title: 'Prevención de Fraude',
-            content: 'Brindamos soluciones sólidas y comprobadas para prevenir fraudes y estadas para tu negocio y tus cliientes',
+            content:
+                'Brindamos soluciones sólidas y comprobadas para prevenir fraudes y estadas para tu negocio y tus cliientes',
         },
     ],
     button: {
         text: 'Agilizá tus procesos',
-        url: '#',
+        url: '#contact',
     },
 };
 
 // INTEGRATION
 export const integration = {
     title: '¿Cómo es el proceso para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent leading-none">integrar BDC Conecta?</span>',
-    content: 'Innovamos en el mercado de APIs hace más de 5 años, con la atención personalizada que nos caracteriza en cada etapa del proceso',
+    content:
+        'Innovamos en el mercado de APIs hace más de 5 años, con la atención personalizada que nos caracteriza en cada etapa del proceso',
     items: [
         {
             id: 1,
@@ -125,19 +128,19 @@ export const solutions = {
     // title: 'Soluciones de BDC Conecta',
     title: '<span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text leading-none text-transparent">Soluciones de BDC Conecta</span>',
 
-    
     items: [
         {
             id: 1,
             img: '/images/cobranza-pagos.jpg',
             alt: '',
             title: 'Cobranzas y Pagos',
-            content:'Automatizá los pagos y cobros de tus clientes y proveedores, ahorrando tiempo y costos de gestión. Con Experiencia API, simplificás tus operaciones financieras:',
-            bullet:[
+            content:
+                'Automatizá los pagos y cobros de tus clientes y proveedores, ahorrando tiempo y costos de gestión. Con Experiencia API, simplificás tus operaciones financieras:',
+            bullet: [
                 {
-                    1:'Realizá y consultá transferencias a CBU, CVU y Alias de manera rápida y segura.',
-                    2:'Administrá tus proveedores de forma eficiente y sin complicaciones.',
-                    3:'Transformá la gestión de tus transacciones, mejorando la eficiencia y reduciendo errores.',
+                    1: 'Realizá y consultá transferencias a CBU, CVU y Alias de manera rápida y segura.',
+                    2: 'Administrá tus proveedores de forma eficiente y sin complicaciones.',
+                    3: 'Transformá la gestión de tus transacciones, mejorando la eficiencia y reduciendo errores.',
                 },
             ],
         },
@@ -146,13 +149,13 @@ export const solutions = {
             img: '/images/billetera-virtual.jpg',
             alt: '',
             title: 'Billetera Virtual',
-            content:'Ofrecé diversas funcionalidades para optimizar la gestión de las transacciones en tu billetera:',
-            bullet:[
+            content: 'Ofrecé diversas funcionalidades para optimizar la gestión de las transacciones en tu billetera:',
+            bullet: [
                 {
-                    1:'Altas y cambio de alias de CVU de manera sencilla.',
-                    2:'Consulta, envío y recepción de transferencias entre CVU y CBU.',
-                    3:'Recibí notificaciones instantáneas de créditos en CVU.',
-                    4:'Posibilitá la financiación directa a tus clientes.',
+                    1: 'Altas y cambio de alias de CVU de manera sencilla.',
+                    2: 'Consulta, envío y recepción de transferencias entre CVU y CBU.',
+                    3: 'Recibí notificaciones instantáneas de créditos en CVU.',
+                    4: 'Posibilitá la financiación directa a tus clientes.',
                 },
             ],
         },
@@ -161,21 +164,21 @@ export const solutions = {
             img: '/images/informacion-cuenta.jpg',
             alt: '',
             title: 'Información de la cuenta',
-            content:'Simplificá la gestión de las cuentas de tus clientes con BDC Conecta:',
-            bullet:[
+            content: 'Simplificá la gestión de las cuentas de tus clientes con BDC Conecta:',
+            bullet: [
                 {
-                    1:'Consultá fácilmente los movimientos de cuentas.',
-                    2:'Obtené información mediante alias, CBU o CVU.',
-                    3:'Validá la información asociada a cada cuenta de forma precisa con nuestras diversas fuentes de información integradas.',
-                    4:'Identificá el origen de transferencias recibidas.',
-                    5:'Obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',
+                    1: 'Consultá fácilmente los movimientos de cuentas.',
+                    2: 'Obtené información mediante alias, CBU o CVU.',
+                    3: 'Validá la información asociada a cada cuenta de forma precisa con nuestras diversas fuentes de información integradas.',
+                    4: 'Identificá el origen de transferencias recibidas.',
+                    5: 'Obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',
                 },
             ],
         },
     ],
     button: {
         text: 'Quiero estas soluciones',
-        url: '#',
+        url: '#contact',
     },
 };
 

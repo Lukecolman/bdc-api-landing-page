@@ -1,5 +1,6 @@
 import React from 'react';
 import { opportunities } from '../constants';
+import ButtonScroll from './buttonScroll';
 import {
     AiOutlineBarChart,
     AiOutlineThunderbolt,
@@ -25,50 +26,58 @@ const Opportunities = () => {
                         <AiOutlineBarChart className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <span className='font-bold text-xl mb-2'>{opportunities.items[0].title}</span>
-                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>{opportunities.items[0].content}</p>
+                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>
+                        {opportunities.items[0].content}
+                    </p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
                     <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineThunderbolt className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <span className='font-bold text-xl mb-2'>{opportunities.items[1].title}</span>
-                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>{opportunities.items[1].content}</p>
+                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>
+                        {opportunities.items[1].content}
+                    </p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
                     <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineFileProtect className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <span className='font-bold text-xl mb-2'>{opportunities.items[2].title}</span>
-                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>{opportunities.items[2].content}</p>
+                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>
+                        {opportunities.items[2].content}
+                    </p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
                     <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineControl className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <span className='font-bold text-xl mb-2'>{opportunities.items[3].title}</span>
-                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>{opportunities.items[3].content}</p>
+                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>
+                        {opportunities.items[3].content}
+                    </p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
                     <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineDatabase className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <span className='font-bold text-xl mb-2'>{opportunities.items[4].title}</span>
-                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>{opportunities.items[4].content}</p>
+                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>
+                        {opportunities.items[4].content}
+                    </p>
                 </div>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
                     <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineSafety className='w-7 h-7 text-bdc-green-300' />
                     </div>
                     <span className='font-bold text-xl mb-2'>{opportunities.items[5].title}</span>
-                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>{opportunities.items[5].content}</p>
+                    <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>
+                        {opportunities.items[5].content}
+                    </p>
                 </div>
             </div>
             <div className='text-center'>
-                <a
-                    href={opportunities.button.url}
-                    className='inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-bdc-green  hover:bg-bdc-green-400 focus:shadow-outline focus:outline-none mt-12'>
-                    {opportunities.button.text}
-                </a>
+                <ButtonScroll information={opportunities} />
             </div>
         </div>
     );

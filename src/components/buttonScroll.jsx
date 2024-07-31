@@ -1,7 +1,6 @@
 import React from 'react';
 
 const ButtonScroll = ({ information, bgColor = 'bg-bdc-green', hoverColor = 'bg-bdc-green-400' }) => {
-    // const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleScroll = (e) => {
         e.preventDefault();
         const targetId = e.currentTarget.getAttribute('href').substring(1);

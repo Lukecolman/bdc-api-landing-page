@@ -259,7 +259,7 @@ export const socialMedia = {
     },
 
     linkedin: {
-        url: 'https://www.linkedin.com/company/35467846/admin/',
+        url: 'https://www.linkedin.com/company/banco-de-comercio-sa/',
     },
 };
 

@@ -3,7 +3,9 @@ import { form } from '../constants';
 
 const Form = () => {
     return (
-        <div className='font-inter overflow-hidden md:px-10 mt-20 bg-bdc-green-500 bg-gradient-to-br from-bdc-green-50 via-bdc-green to-bdc-green-500' id="contact">
+        <div
+            className='font-inter overflow-hidden md:px-10 mt-20 bg-bdc-green-500 bg-gradient-to-br from-bdc-green-50 via-bdc-green to-bdc-green-500'
+            id='contact'>
             <div className='px-3.5 py-16 mx-auto rounded-xl w-full md:max-w-screen-xl md:px-24 lg:px-8 lg:py-24'>
                 <div className='flex flex-col items-center justify-between'>
                     <div className='w-full text-center '>
@@ -39,7 +41,7 @@ const Form = () => {
                                             placeholder='Teléfono'
                                             required
                                             type='tel'
-                                            class='flex-grow w-full h-9 px-3.5 transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white required'
+                                            className='flex-grow w-full h-9 px-3.5 transition duration-200 bg-white bg-opacity-10 border-2 border-white/35 rounded shadow-sm appearance-none focus:border-white/75 focus:outline-none focus:shadow-outline placeholder:text-white text-white required'
                                             id='phone'
                                             name='phone'
                                         />

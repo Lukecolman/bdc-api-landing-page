@@ -28,8 +28,6 @@ export const navbar = {
 // HERO BANNER
 export const heroBanner = {
     title: 'Eficiencia en tus cobros y pagos con <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">BDC Conecta</span>',
-    // contentTEST: "Transforma tu negocio con nuestras soluciones integradas. Mejora la eficiencia, seguridad y experiencia del cliente con BDC Conecta.",
-    // contentTEST2: "Transforma tu negocio con BDC Conecta. Integra tu sistema de gestión y optimiza tus operaciones financieras con nuestras soluciones tecnológicas de APIs. Acelera tus procesos, reduce costos y maximiza la eficiencia.",
     content:
         'Con nuestras APIs  optimizás tiempos, reducís costos y maximizás recursos, llevando tu empresa a un nuevo modelo de administración y agilidad en tesorería.',
     button: {
@@ -126,13 +124,12 @@ export const integration = {
 // SOLUTIONS
 export const solutions = {
     // title: 'Soluciones de BDC Conecta',
-    title: '<span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text leading-none text-transparent">Soluciones de BDC Conecta</span>',
+    title: 'Soluciones <br/>de BDC Conecta',
 
     items: [
         {
             id: 1,
-            img: '/images/cobranza-pagos.jpg',
-            alt: '',
+            img: '/images/payment.png',
             title: 'Cobranzas y Pagos',
             content:
                 'Automatizá los pagos y cobros de tus clientes y proveedores, ahorrando tiempo y costos de gestión. Con Experiencia API, simplificás tus operaciones financieras:',
@@ -146,8 +143,7 @@ export const solutions = {
         },
         {
             id: 2,
-            img: '/images/billetera-virtual.jpg',
-            alt: '',
+            img: '/images/digital-wallet.png',
             title: 'Billetera Virtual',
             content: 'Ofrecé diversas funcionalidades para optimizar la gestión de las transacciones en tu billetera:',
             bullet: [
@@ -161,8 +157,7 @@ export const solutions = {
         },
         {
             id: 3,
-            img: '/images/informacion-cuenta.jpg',
-            alt: '',
+            img: '/images/account-information.png',
             title: 'Información de la cuenta',
             content: 'Simplificá la gestión de las cuentas de tus clientes con BDC Conecta:',
             bullet: [

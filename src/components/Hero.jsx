@@ -35,7 +35,9 @@ const Hero = () => {
                     />
                     <p className='text-base text-gray-700 md:text-xl max-w-3xl text-balance'>{heroBanner.content}</p>
                 </div>
-                <ButtonScroll information={heroBanner} />
+                <div className='mb-32'>
+                    <ButtonScroll information={heroBanner} />
+                </div>
             </div>
             {/* <div className="relative">
                 <div

@@ -1,7 +1,24 @@
 import React from 'react';
 import { heroBanner } from '../constants';
+import ButtonScroll from './buttonScroll';
 
+/* TODO: ADD EXTRA TEXT AT THE BOTTOM OF THE IMAGE IN THE HERO "imageFooter" */
 const Hero = () => {
+    const handleScroll = (e) => {
+        e.preventDefault();
+        const targetId = e.currentTarget.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const yOffset = -75;
+            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({
+                top: y,
+                behavior: 'smooth',
+            });
+        }
+    };
     return (
         <div className='flex font-inter flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-14 md:px-0  overflow-hidden  gradien relative'>
             <div className='flex flex-col items-center max-w-7xl md:px-8'>
@@ -13,16 +30,14 @@ const Hero = () => {
                 </div>
                 <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-7xl flex flex-col items-center '>
                     <h1
-                        className=' font-space mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto text-balance'
+                        className='mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto max-w-[900px]'
                         dangerouslySetInnerHTML={{ __html: heroBanner.title }}
                     />
-                    <p className='text-base text-gray-700 md:text-xl max-w-5xl text-balance'>{heroBanner.content}</p>
+                    <p className='text-base text-gray-700 md:text-xl max-w-3xl text-balance'>{heroBanner.content}</p>
                 </div>
-                <a
-                    href={heroBanner.button.link}
-                    className='inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-bdc-green hover:bg-bdc-green-400 focus:shadow-outline focus:outline-none mb-24'>
-                    {heroBanner.button.text}
-                </a>
+                <div className='mb-32'>
+                    <ButtonScroll information={heroBanner} />
+                </div>
             </div>
             {/* <div className="relative">
                 <div

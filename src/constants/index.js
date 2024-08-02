@@ -35,7 +35,7 @@ export const heroBanner = {
         url: '#contact',
     },
     imageUrl: {
-        img: '/images/heroBanner.jpg',
+        img: '/images/bannerheroimg2.png',
         alt: '',
     },
     imageFooter:

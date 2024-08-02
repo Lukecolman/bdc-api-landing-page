@@ -53,7 +53,9 @@ const Hero = () => {
             <div className=' flex w-full  items-center justify-center rounded-lg text-slate-300 '>
                 <img
                     src={heroBanner.imageUrl.img}
-                    className='w-full max-w-screen-sm mx-auto rounded-t-xl shadow-2xl md:w-auto lg:max-w-screen-lg bg-green-500'
+                    className='w-full max-w-screen-sm mx-auto rounded-t-xl md:w-auto lg:max-w-screen'
+                    // className='w-full max-w-screen-sm mx-auto rounded-t-xl shadow-2xl md:w-auto lg:max-w-screen-lg bg-green-500'
+
                     alt={heroBanner.imageUrl.alt}
                 />
             </div>

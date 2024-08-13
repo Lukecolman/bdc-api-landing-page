@@ -1,6 +1,7 @@
 import React from 'react';
 import { heroBanner } from '../constants';
 import ButtonScroll from './buttonScroll';
+import { AiOutlineFullscreen, AiOutlinePieChart, AiOutlineThunderbolt } from 'react-icons/ai';
 
 /* TODO: ADD EXTRA TEXT AT THE BOTTOM OF THE IMAGE IN THE HERO "imageFooter" */
 const Hero = () => {
@@ -20,49 +21,61 @@ const Hero = () => {
         }
     };
     return (
-        <div className='flex font-inter flex-col items-center justify-center px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:pt-14 md:px-0  overflow-hidden  gradien relative'>
-            <div className='flex flex-col items-center max-w-7xl md:px-8'>
-                {' '}
-                <div>
-                    {/* <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-green-400">
-              Brand new
-            </p> */}
-                </div>
-                <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-7xl flex flex-col items-center '>
-                    <h1
-                        className='mb-6 text-gray-800 text-3xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto max-w-[900px]'
-                        dangerouslySetInnerHTML={{ __html: heroBanner.title }}
-                    />
-                    <p className='text-base text-gray-700 md:text-xl max-w-3xl text-balance'>{heroBanner.content}</p>
-                </div>
-                <div className='mb-32'>
-                    <ButtonScroll information={heroBanner} />
+        <div className='flex px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full font-inter'>
+            <div className='max-w-xl mx-auto lg:max-w-screen-xl pt-2'>
+                <div className='mb-16 lg:max-w-lg lg:mb-0'>
+                    <div className='max-w-xl mb-6'>
+                        <h1
+                            className='mb-6 text-bdc-blue-700 text-3xl font-bold !leading-tight tracking-tight  sm:text-6xl md:mx-auto max-w-[900px]'
+                            dangerouslySetInnerHTML={{ __html: heroBanner.title }}
+                        />
+                        <p className='text-base text-bdc-blue-700 md:text-xl max-w-3xl text-pretty'>
+                            {heroBanner.content}
+                        </p>
+                    </div>
+                    <div className='flex items-center gap-8'>
+                        <ButtonScroll information={heroBanner} />
+                        <a
+                            href={heroBanner.button2.url}
+                            target='_blank'
+                            className={`inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none border-4 border-bdc-green text-bdc-green hover:border-bdc-green-400 hover:text-bdc-green-400`}>
+                            {heroBanner.button2.text}
+                        </a>
+                    </div>
                 </div>
             </div>
-            {/* <div className="relative">
-                <div
-                  className="absolute -inset-2 rounded-lg bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-violet-600 via-amber-600 to-indigo-600 opacity-50 blur-2xl"
-                  ></div>
+            <div className='flex justify-center h-full lg:w-2/3 xl:w-1/2 relative'>
                 <img
-              src={heroBanner.imageUrl.img}
-              className='w-full max-w-screen-sm mx-auto rounded shadow-2xl md:w-auto lg:max-w-screen-2xl bg-green-500'
-              alt={heroBanner.imageUrl.alt}
-          />
-            </div> */}
-
-            <div className=' flex w-full  items-center justify-center rounded-lg text-slate-300 '>
-                <img
-                    src={heroBanner.imageUrl.img}
-                    className='w-full max-w-screen-sm mx-auto rounded-t-xl md:w-auto lg:max-w-screen'
-                    // className='w-full max-w-screen-sm mx-auto rounded-t-xl shadow-2xl md:w-auto lg:max-w-screen-lg bg-green-500'
-
-                    alt={heroBanner.imageUrl.alt}
+                    src='./images/bannerImg-green.svg'
+                    className='w-full h-full max-w-xl lg:h-auto lg:max-w-[462px] '
+                    alt=''
                 />
+
+                <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute flex items-center left-28 -bottom-2 max-w-40 min-w-[150px] justify-center'>
+                    <AiOutlineFullscreen className='w-[45px] h-[45px] text-bdc-green' />
+                    <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
+                        Maximizá
+                        <br />
+                        Recursos
+                    </span>
+                </div>
+                <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute  flex items-center left-1/3 -top-10  max-w-40 min-w-[150px] justify-center'>
+                    <AiOutlinePieChart className='w-[45px] h-[45px] text-bdc-green' />
+                    <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
+                        Reducí
+                        <br />
+                        Costos
+                    </span>
+                </div>
+                <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute right-16 top-40 flex items-center max-w-40 min-w-[150px] justify-center'>
+                    <AiOutlineThunderbolt className='w-[45px] h-[45px] text-bdc-green' />
+                    <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
+                        Optimizá
+                        <br />
+                        Tiempos
+                    </span>
+                </div>
             </div>
-            <div className='absolute w-full translate-y-1/2 -z-10 rounded-full -inset-0 scale-90  bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-bdc-green-50 to-bdc-green-50 opacity-30 blur-[200px]' />
-            {/* <div
-                  className="absolute w-full translate-y-1/3 -z-10 rounded-full -inset-0 scale-90  bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-bdc-green to-transparent opacity-100 blur-[100px]   bg-violet-700"
-                /> */}
         </div>
     );
 };

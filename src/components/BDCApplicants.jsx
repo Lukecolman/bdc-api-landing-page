@@ -1,6 +1,12 @@
 import React from 'react';
 import { bdcApplicants } from '../constants';
-import { AiOutlineWallet, AiOutlineShoppingCart, AiOutlineMedicineBox, AiOutlineRead } from 'react-icons/ai';
+import {
+    AiOutlineWallet,
+    AiOutlineShoppingCart,
+    AiOutlineMedicineBox,
+    AiOutlineRead,
+    AiOutlineDown,
+} from 'react-icons/ai';
 import { CgGym } from 'react-icons/cg';
 import { HiOutlineBuildingOffice } from 'react-icons/hi2';
 
@@ -27,7 +33,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <AiOutlineWallet className='w-7 h-7 text-green-400' />
+                            <AiOutlineWallet className='w-7 h-7 text-bdc-green-500' />
                         </div>
                     </div>
                     <div>
@@ -38,19 +44,24 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <AiOutlineShoppingCart className='w-7 h-7 text-green-400' />
+                            <AiOutlineShoppingCart className='w-7 h-7 text-bdc-green-500' />
                         </div>
                     </div>
                     <div>
-                        <h6 className='mb-3 text-xl font-bold leading-5'>{applicant.item2[0].title}</h6>
-                        <p className='mb-3 text-sm text-gray-900'>{applicant.item2[0].content}</p>
+                        <div className='flex gap-3 mb-3 items-center pr-3'>
+                            <AiOutlineShoppingCart className='w-8 h-8 text-bdc-green-500' />
+                            <h6 className='text-xl font-bold leading-5 grow'>{applicant.item2[0].title}</h6>
+
+                            <AiOutlineDown />
+                        </div>
+                        <p className='px-2 mb-3 text-sm text-gray-900'>{applicant.item2[0].content}</p>
                     </div>
                 </div>
 
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <AiOutlineMedicineBox className='w-7 h-7 text-green-400' />
+                            <AiOutlineMedicineBox className='w-7 h-7 text-bdc-green-500' />
                         </div>
                     </div>
                     <div>
@@ -62,7 +73,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <AiOutlineRead className='w-7 h-7 text-green-400' />
+                            <AiOutlineRead className='w-7 h-7 text-bdc-green-500' />
                         </div>
                     </div>
                     <div>
@@ -74,7 +85,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <HiOutlineBuildingOffice className='w-7 h-7 text-green-400' />
+                            <HiOutlineBuildingOffice className='w-7 h-7 text-bdc-green-500' />
                         </div>
                     </div>
                     <div>
@@ -86,7 +97,7 @@ const BDCApplicants = () => {
                 <div className='flex flex-col max-w-md sm:mx-auto sm:flex-row'>
                     <div className='mr-4'>
                         <div className='flex items-center justify-center w-12 h-12 mb-4 rounded-full shadow-md'>
-                            <CgGym className='w-7 h-7 text-green-400' />
+                            <CgGym className='w-7 h-7 text-bdc-green-500' />
                         </div>
                     </div>
                     <div>

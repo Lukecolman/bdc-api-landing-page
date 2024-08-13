@@ -20,7 +20,7 @@ const Opportunities = () => {
                 />
                 <p className='text-base text-bdc-gray-700 md:text-xl'>{opportunities.subtitle}</p>
             </div>
-            <div className='grid gap-8 mb-8 md:grid-cols-2 lg:grid-cols-3'>
+            <div className='grid gap-8 mb-8 md:grid-cols-2 lg:grid-cols-2'>
                 <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
                     <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineBarChart className='w-7 h-7 text-bdc-green-300' />
@@ -57,7 +57,7 @@ const Opportunities = () => {
                         {opportunities.items[3].content}
                     </p>
                 </div>
-                <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
+                {/* <div className='p-5 duration-200 transform bg-white border-l-4 border-bdc-green text-bdc-gray-700 rounded shadow-md hover:-translate-y-2 hover:shadow-lg flex flex-col'>
                     <div className='w-fit p-3 mb-4 rounded-full shadow-md'>
                         <AiOutlineDatabase className='w-7 h-7 text-bdc-green-300' />
                     </div>
@@ -74,7 +74,7 @@ const Opportunities = () => {
                     <p className='mb-2 font-regular leading-snug text-base text-bdc-gray-600'>
                         {opportunities.items[5].content}
                     </p>
-                </div>
+                </div> */}
             </div>
             <div className='text-center'>
                 <ButtonScroll information={opportunities} />

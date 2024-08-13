@@ -1,14 +1,28 @@
-import { Navbar, Hero, Opportunities, Integration, Solutions, BDCApplicants, Form, Footer } from './components/index';
+import {
+    Navbar,
+    Hero,
+    Opportunities,
+    Opportunities2,
+    Integration,
+    Solutions,
+    BDCApplicants,
+    BDCApplicants2,
+    Form,
+    Footer,
+} from './components/index';
 
 function App() {
     return (
         <>
             <Navbar />
             <Hero />
-            <Opportunities />
-            <Integration />
             <Solutions />
+            <Opportunities />
+            <Opportunities2 />
+            <Integration />
             <BDCApplicants />
+            <BDCApplicants2 />
+
             <Form />
             <Footer />
         </>

@@ -32,7 +32,7 @@ const Integration = () => {
                             <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
                                 <AiOutlineBulb className='w-8 h-8 text-bdc-green-300' />
                             </div>
-                            <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
+                            <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all pt-3'>
                                 {integration.items[0].content}
                             </p>
                         </div>

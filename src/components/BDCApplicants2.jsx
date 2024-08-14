@@ -12,12 +12,12 @@ const BDCApplicants2 = () => {
         const contentRef = useRef(null);
 
         return (
-            <div className='border-b w-full max-w-2xl mx-auto'>
+            <div className='border-b w-full max-w-2xl mx-auto '>
                 <button
                     type='button'
                     aria-label='Open item'
                     title='Open item'
-                    className='flex items-center justify-between w-full p-4 focus:outline-none'
+                    className='flex items-center justify-between w-full p-4 focus:outline-none hover:bg-bdc-green/10 rounded-t-xl'
                     onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex items-center'>
                         <Icon className='w-7 h-7 text-bdc-blue-500 mr-4' />
@@ -45,7 +45,7 @@ const BDCApplicants2 = () => {
                     style={{
                         maxHeight: isOpen ? `${contentRef.current.scrollHeight}px` : '0px',
                     }}>
-                    <div className='p-7 pt-0 text-gray-700'>
+                    <div className='p-7  pt-6 text-gray-700 '>
                         <p>{children}</p>
                     </div>
                 </div>

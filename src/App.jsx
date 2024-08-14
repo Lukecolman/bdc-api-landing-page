@@ -17,10 +17,10 @@ function App() {
             <Navbar />
             <Hero />
             <Solutions />
-            <Opportunities />
+            {/* <Opportunities /> */}
             <Opportunities2 />
             <Integration />
-            <BDCApplicants />
+            {/* <BDCApplicants /> */}
             <BDCApplicants2 />
 
             <Form />

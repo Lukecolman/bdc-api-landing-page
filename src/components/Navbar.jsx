@@ -125,21 +125,21 @@ const Navbar = () => {
                                         <li>
                                             <a
                                                 href={navbar.soluciones.url}
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400'>
+                                                className='font-medium tracking-wide text-bdc-blue transition-colors duration-200 hover:text-bdc-green'>
                                                 {navbar.integracion.title}
                                             </a>
                                         </li>
                                         <li>
                                             <a
                                                 href={navbar.soluciones.url}
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400'>
+                                                className='font-medium tracking-wide text-bdc-blue transition-colors duration-200 hover:text-bdc-green'>
                                                 {navbar.soluciones.title}
                                             </a>
                                         </li>
                                         <li>
                                             <a
                                                 href={navbar.soluciones.url}
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400'>
+                                                className='font-medium tracking-wide text-bdc-blue transition-colors duration-200 hover:text-bdc-green'>
                                                 {navbar.contacto.title}
                                             </a>
                                         </li>

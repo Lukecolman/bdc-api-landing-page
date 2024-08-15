@@ -54,15 +54,15 @@ const BDCApplicants2 = () => {
     };
 
     return (
-        <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32'>
-            <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-5xl md:mb-16'>
+        <div className='font-inter px-4 py-16 mx-auto  md:max-w-full lg:max-w-screen-xl  lg:px-8 lg:py-32'>
+            <div className=' mb-10 md:mx-auto sm:text-center lg:max-w-5xl md:mb-16'>
                 <h2
                     className='max-w-7xl mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:text-6xl md:mx-auto text-balance'
                     dangerouslySetInnerHTML={{ __html: applicant.title }}
                 />
                 <p className='max-w-2xl mx-auto text-base text-gray-700 md:text-lg text-pretty'>{applicant.subtitle}</p>
             </div>
-            <div className='space-y-4'>
+            <div className='space-y-4 max-w-2xl mx-auto'>
                 <Item title={applicant.item1[0].title} icon={AiOutlineWallet}>
                     {applicant.item1[0].content}
                 </Item>

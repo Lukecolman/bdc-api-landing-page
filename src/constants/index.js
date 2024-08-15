@@ -104,7 +104,7 @@ export const opportunities = {
 
 // INTEGRATION
 export const integration = {
-    title: '¿Cómo es el proceso para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent leading-none">integrar BDC Conecta?</span>',
+    title: '¿Cómo es el proceso para <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">integrar BDC Conecta?</span>',
     content:
         'Innovamos en el mercado de APIs hace más de 5 años, con la atención personalizada que nos caracteriza en cada etapa del proceso',
     items: [

@@ -6,12 +6,19 @@ import { AiOutlineBulb, AiOutlineSolution, AiOutlineApi, AiOutlineRocket } from 
 
 const Integration = () => {
     // const sectionRef = useRef();
+    const items = [
+        { icon: <AiOutlineBulb className='w-8 h-8 text-bdc-green-300' />, content: integration.items[0].content },
+        { icon: <AiOutlineSolution className='w-8 h-8 text-bdc-green-300' />, content: integration.items[1].content },
+        { icon: <AiOutlineApi className='w-8 h-8 text-bdc-green-300' />, content: integration.items[2].content },
+        { icon: <AiOutlineRocket className='w-8 h-8 text-bdc-green-300' />, content: integration.items[3].content },
+    ];
+
     return (
         <section className='w-full bg-bdc-gray-100/25'>
-            <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32'>
-                <div className='flex flex-col md:pl-16 justify-between items-center lg:flex-row'>
+            <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-32 bg-green-500'>
+                <div className='flex flex-col lg:pl-16 justify-between items-center lg:flex-row bg-red-200'>
                     {/* TITLE */}
-                    <div className='sm:max-w-2xl md:pr-16 mb-6 md:mb-0'>
+                    <div className='sm:max-w-2xl lg:pr-16 mb-6 md:mb-0 bg-violet-300'>
                         <h5
                             className='text-4xl mb-2 sm:text-6xl font-extrabold leading-tight text-balance'
                             dangerouslySetInnerHTML={{ __html: integration.title }}
@@ -26,43 +33,24 @@ const Integration = () => {
           </button>
         </div> */}
                     </div>
-                    <div className='flex flex-col shadow-2xl md:max-w-xl lg:max-w-md'>
-                        {/* ITEM 1 */}
-                        <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400 hover:border-bdc-green-400'>
-                            <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
-                                <AiOutlineBulb className='w-8 h-8 text-bdc-green-300' />
-                            </div>
-                            <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all pt-3'>
-                                {integration.items[0].content}
-                            </p>
-                        </div>
-                        {/* ITEM 2 */}
-                        <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400 hover:border-bdc-green-400'>
-                            <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
-                                <AiOutlineSolution className='w-8 h-8 text-bdc-green-300' />
-                            </div>
-                            <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
-                                {integration.items[1].content}
-                            </p>
-                        </div>
-                        {/* ITEM 3 */}
-                        <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400 hover:border-bdc-green-400'>
-                            <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
-                                <AiOutlineApi className='w-8 h-8 text-bdc-green-300' />
-                            </div>
-                            <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
-                                {integration.items[2].content}
-                            </p>
-                        </div>
-                        {/* ITEM 4 */}
-                        <div className='flex gap-6 max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400 hover:border-bdc-green-400'>
-                            <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
-                                <AiOutlineRocket className='w-8 h-8 text-bdc-green-300' />
-                            </div>
-                            <p className='text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all'>
-                                {integration.items[3].content}
-                            </p>
-                        </div>
+                    <div className='flex flex-col shadow-2xl md:max-w-xl lg:max-w-md bg-orange-400 '>
+                        {items.map((item, index) => {
+                            return (
+                                <div
+                                    key={index}
+                                    className=' flex gap-6 max-w-md lg:max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400 hover:border-bdc-green-400'>
+                                    <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
+                                        {item.icon}
+                                    </div>
+                                    <p
+                                        className={`text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all ${
+                                            index === 0 ? 'sm:pt-3' : ''
+                                        }`}>
+                                        {item.content}
+                                    </p>
+                                </div>
+                            );
+                        })}
                     </div>
                 </div>
             </div>

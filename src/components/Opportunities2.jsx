@@ -12,10 +12,10 @@ import {
 
 const Opportunities2 = () => {
     return (
-        <div className='px-4 py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
-            <div className='max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-16'>
+        <div className='px-4 py-20 mx-auto  md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
+            <div className='mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-16'>
                 <h2
-                    className='max-w-2xl mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 md:max-w-xl sm:text-6xl md:mx-auto text-pretty'
+                    className=' mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 md:max-w-xl sm:text-6xl md:mx-auto text-pretty'
                     dangerouslySetInnerHTML={{ __html: opportunities.title }}
                 />
                 <p className='text-base text-bdc-gray-700 md:text-lg'>{opportunities.subtitle}</p>

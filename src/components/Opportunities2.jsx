@@ -13,9 +13,9 @@ import {
 const Opportunities2 = () => {
     return (
         <div className='px-4 py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20'>
-            <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-16'>
+            <div className='max-w-xl mb-10 md:mx-auto text-center lg:max-w-2xl md:mb-16'>
                 <h2
-                    className='max-w-2xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 md:max-w-xl sm:text-6xl md:mx-auto text-pretty'
+                    className='max-w-2xl mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 md:max-w-xl sm:text-6xl md:mx-auto text-pretty'
                     dangerouslySetInnerHTML={{ __html: opportunities.title }}
                 />
                 <p className='text-base text-bdc-gray-700 md:text-lg'>{opportunities.subtitle}</p>
@@ -27,7 +27,9 @@ const Opportunities2 = () => {
                             <AiOutlineBarChart className='w-12 h-12 text-bdc-blue-300' />
                         </div>
                         <h6 className='mb-2 font-semibold leading-5'>{opportunities.items[0].title}</h6>
-                        <p className='mb-3 text-base text-pretty text-gray-900'>{opportunities.items[0].content}</p>
+                        <p className='mb-3 text-base font-medium text-pretty text-gray-600'>
+                            {opportunities.items[0].content}
+                        </p>
                     </div>
                 </div>
                 <div className='flex flex-col justify-between p-5 border rounded shadow-sm duration-200 transform hover:-translate-y-2 hover:shadow-lg'>
@@ -36,7 +38,9 @@ const Opportunities2 = () => {
                             <AiOutlineThunderbolt className='w-12 h-12 text-bdc-blue-300' />
                         </div>
                         <h6 className='mb-2 font-semibold leading-5'>{opportunities.items[1].title}</h6>
-                        <p className='mb-3 text-base text-pretty text-gray-900'>{opportunities.items[1].content}</p>
+                        <p className='mb-3 text-base font-medium text-pretty text-gray-600'>
+                            {opportunities.items[1].content}
+                        </p>
                     </div>
                 </div>
                 <div className='flex flex-col justify-between p-5 border rounded shadow-sm duration-200 transform hover:-translate-y-2 hover:shadow-lg'>
@@ -45,7 +49,9 @@ const Opportunities2 = () => {
                             <AiOutlineFileProtect className='w-12 h-12 text-bdc-blue-300' />
                         </div>
                         <h6 className='mb-2 font-semibold leading-5'>{opportunities.items[2].title}</h6>
-                        <p className='mb-3 text-base text-pretty text-gray-900'>{opportunities.items[2].content}</p>
+                        <p className='mb-3 text-base font-medium text-pretty text-gray-600'>
+                            {opportunities.items[2].content}
+                        </p>
                     </div>
                 </div>
                 <div className='flex flex-col justify-between p-5 border rounded shadow-sm duration-200 transform hover:-translate-y-2 hover:shadow-lg'>
@@ -54,7 +60,9 @@ const Opportunities2 = () => {
                             <AiOutlineControl className='w-12 h-12 text-bdc-blue-300' />
                         </div>
                         <h6 className='mb-2 font-semibold leading-5'>{opportunities.items[3].title}</h6>
-                        <p className='mb-3 text-base text-pretty text-gray-900'>{opportunities.items[3].content}</p>
+                        <p className='mb-3 text-base font-medium text-pretty text-gray-600'>
+                            {opportunities.items[3].content}
+                        </p>
                     </div>
                 </div>
             </div>

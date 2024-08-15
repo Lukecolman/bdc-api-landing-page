@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useRef } from 'react';
 import { bdc, navbar } from '../constants';
 
-
 const Navbar = () => {
     // TODO: AJUSTAR NAVBAR MOBILE
 
@@ -11,11 +10,11 @@ const Navbar = () => {
         e.preventDefault();
         const targetId = e.currentTarget.getAttribute('href').substring(1);
         const targetElement = document.getElementById(targetId);
-    
+
         if (targetElement) {
             const yOffset = -75;
             const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    
+
             window.scrollTo({
                 top: y,
                 behavior: 'smooth',
@@ -36,17 +35,9 @@ const Navbar = () => {
                 <ul className='hidden items-center space-x-8 lg:flex'>
                     <li>
                         <a
-                            href={navbar.integracion.url}
-                            target='_blank'
-                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400'>
-                            {navbar.integracion.title}
-                        </a>
-                    </li>
-                    <li>
-                        <a
                             href={navbar.soluciones.url}
                             onClick={handleScroll}
-                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400'>
+                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-bdc-green'>
                             {navbar.soluciones.title}
                         </a>
                     </li>
@@ -54,8 +45,16 @@ const Navbar = () => {
                         <a
                             href={navbar.contacto.url}
                             onClick={handleScroll}
-                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-green-400'>
+                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-bdc-green'>
                             {navbar.contacto.title}
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href={navbar.integracion.url}
+                            target='_blank'
+                            className='font-medium tracking-wide text-white transition-colors duration-200 hover:bg-bdc-green-400 bg-bdc-green px-6 py-3 rounded '>
+                            {navbar.integracion.title}
                         </a>
                     </li>
                 </ul>

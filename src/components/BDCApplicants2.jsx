@@ -20,8 +20,8 @@ const BDCApplicants2 = () => {
                     className='flex items-center justify-between w-full p-4 focus:outline-none hover:bg-bdc-green/10 rounded-t-xl'
                     onClick={() => setIsOpen(!isOpen)}>
                     <div className='flex items-center'>
-                        <Icon className='w-7 h-7 text-bdc-blue-500 mr-4' />
-                        <p className='text-lg font-medium'>{title}</p>
+                        <Icon className='w-6 h-6 mr-3 sm:w-7 sm:h-7 text-bdc-blue-500 sm:mr-4' />
+                        <p className='text-base sm:text-lg font-medium'>{title}</p>
                     </div>
                     <svg
                         viewBox='0 0 24 24'
@@ -57,7 +57,7 @@ const BDCApplicants2 = () => {
         <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-32'>
             <div className='max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-5xl md:mb-16'>
                 <h2
-                    className='max-w-7xl mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:text-6xl md:mx-auto text-balance'
+                    className='max-w-7xl mb-6 text-4xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:text-6xl md:mx-auto text-balance'
                     dangerouslySetInnerHTML={{ __html: applicant.title }}
                 />
                 <p className='max-w-2xl mx-auto text-base text-gray-700 md:text-lg text-pretty'>{applicant.subtitle}</p>

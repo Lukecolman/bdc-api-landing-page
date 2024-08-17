@@ -9,11 +9,13 @@ import BDCApplicants from './BDCApplicants.jsx';
 import BDCApplicants2 from './BDCApplicants2.jsx';
 import Form from './Form.jsx';
 import Footer from './Footer';
+import Slider from './Slider.jsx';
 
 export {
     // SECTIONS
     Navbar,
     Hero,
+    Slider,
     Opportunities,
     Opportunities2,
     Integration,

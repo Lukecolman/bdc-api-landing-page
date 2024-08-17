@@ -1,6 +1,7 @@
 import {
     Navbar,
     Hero,
+    Slider,
     Opportunities,
     Opportunities2,
     Integration,
@@ -16,6 +17,7 @@ function App() {
         <>
             <Navbar />
             <Hero />
+            <Slider />
             <Solutions />
             {/* <Opportunities /> */}
             <Opportunities2 />

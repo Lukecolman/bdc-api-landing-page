@@ -1,40 +1,6 @@
-// import React from 'react';
-// import 'keen-slider/keen-slider.min.css';
-// import { useKeenSlider } from 'keen-slider/react'; // import from 'keen-slider/react.es' for to get an ES module
-
-// const Slider = () => {
-//     const [sliderRef, instanceRef] = useKeenSlider(
-//         {
-//             slideChanged() {
-//                 console.log('slide changed');
-//             },
-//             loop: true,
-//         },
-//         [
-//             // add plugins here
-//         ]
-//     );
-//     return (
-//         <div ref={sliderRef} className='keen-slider bg-red-500 h-96'>
-//             <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-green-500 text-white text-9xl'>
-//                 1
-//             </div>
-//             <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-violet-500 text-white text-9xl'>
-//                 2
-//             </div>
-//             <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-orange-500 text-white text-9xl'>
-//                 3
-//             </div>
-//         </div>
-//     );
-// };
-
-// export default Slider;
-
 import React, { useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-// import './styles.css';
 
 export default () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -48,49 +14,58 @@ export default () => {
             created() {
                 setLoaded(true);
             },
-        },
-        [
-            (slider) => {
-                let timeout;
-                let mouseOver = false;
+            loop: true,
+        }
+        // [
+        //     (slider) => {
+        //         let timeout;
+        //         let mouseOver = false;
 
-                function clearNextTimeout() {
-                    clearTimeout(timeout);
-                }
+        //         function clearNextTimeout() {
+        //             clearTimeout(timeout);
+        //         }
 
-                function nextTimeout() {
-                    clearTimeout(timeout);
-                    if (mouseOver) return;
-                    timeout = setTimeout(() => {
-                        slider.next();
-                    }, 2000);
-                }
+        //         function nextTimeout() {
+        //             clearTimeout(timeout);
+        //             if (mouseOver) return;
+        //             timeout = setTimeout(() => {
+        //                 slider.next();
+        //             }, 2000);
+        //         }
 
-                slider.on('created', () => {
-                    slider.container.addEventListener('mouseover', () => {
-                        mouseOver = true;
-                        clearNextTimeout();
-                    });
-                    slider.container.addEventListener('mouseout', () => {
-                        mouseOver = false;
-                        nextTimeout();
-                    });
-                    nextTimeout();
-                });
+        //         slider.on('created', () => {
+        //             slider.container.addEventListener('mouseover', () => {
+        //                 mouseOver = true;
+        //                 clearNextTimeout();
+        //             });
+        //             slider.container.addEventListener('mouseout', () => {
+        //                 mouseOver = false;
+        //                 nextTimeout();
+        //             });
+        //             nextTimeout();
+        //         });
 
-                slider.on('dragStarted', clearNextTimeout);
-                slider.on('animationEnded', nextTimeout);
-                slider.on('updated', nextTimeout);
-            },
-        ]
+        //         slider.on('dragStarted', clearNextTimeout);
+        //         slider.on('animationEnded', nextTimeout);
+        //         slider.on('updated', nextTimeout);
+        //     },
+        // ]
     );
 
     return (
         <>
             <div className='relative'>
-                <div ref={sliderRef} className='keen-slider bg-red-500 h-96'>
-                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-green-500 text-white text-9xl'>
-                        1
+                <div ref={sliderRef} className='keen-slider bg-red-500 h-[300px] font-inter'>
+                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-green text-white text-[38px] leading-tight gap-32'>
+                        <img src='./images/bannericon1.svg' alt='icon' className='h-[192px] w-[192px] fill-slate-500' />
+                        <div className='flex flex-col gap-7'>
+                            <span className='font-extrabold block max-w-[42rem]'>
+                                Automatizá los pagos y cobros de tus clientes y proveedores.
+                            </span>
+                            <a href='' className='font-medium text-base bg-bdc-blue px-11 py-3 rounded w-fit'>
+                                Conocé más{' '}
+                            </a>
+                        </div>
                     </div>
                     <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-violet-500 text-white text-9xl'>
                         2
@@ -114,20 +89,6 @@ export default () => {
                     </>
                 )}
             </div>
-            {/* {loaded && instanceRef.current && (
-                <div className='dots'>
-                    {[...Array(instanceRef.current.track.details.slides.length).keys()].map((idx) => {
-                        return (
-                            <button
-                                key={idx}
-                                onClick={() => {
-                                    instanceRef.current?.moveToIdx(idx);
-                                }}
-                                className={'dot' + (currentSlide === idx ? ' active' : '')}></button>
-                        );
-                    })}
-                </div>
-            )} */}
         </>
     );
 };

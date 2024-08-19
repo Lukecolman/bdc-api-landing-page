@@ -58,9 +58,13 @@ export default () => {
     return (
         <>
             <div className='relative'>
-                <div ref={sliderRef} className='keen-slider bg-red-500 h-[300px] font-inter'>
-                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-green text-white text-[38px] leading-tight gap-28'>
-                        <img src='./images/bannericon1.svg' alt='icon' className='h-[192px] w-[192px]' />
+                <div ref={sliderRef} className='keen-slider bg-red-500 h-[350px] md:h-[300px] font-inter'>
+                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-green text-white text-2xl md:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
+                        <img
+                            src='./images/bannericon1.svg'
+                            alt='icon'
+                            className='hidden md:block h-[192px] w-[192px]'
+                        />
                         <div className='flex flex-col gap-7'>
                             <span className='font-extrabold block max-w-[42rem]'>{sliders[1].content}</span>
                             <a href='' className='font-medium text-base bg-bdc-blue px-11 py-3 rounded w-fit'>
@@ -68,8 +72,12 @@ export default () => {
                             </a>
                         </div>
                     </div>
-                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-blue text-white text-[38px] leading-tight gap-28'>
-                        <img src='./images/bannericon2.svg' alt='icon' className='h-[192px] w-[192px]' />
+                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-blue text-white text-2xl md:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
+                        <img
+                            src='./images/bannericon2.svg'
+                            alt='icon'
+                            className='hidden md:block h-[192px] w-[192px]'
+                        />
                         <div className='flex flex-col gap-7'>
                             <span className='font-extrabold block max-w-[42rem]'>{sliders[2].content}</span>
                             <a href='' className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
@@ -77,8 +85,12 @@ export default () => {
                             </a>
                         </div>
                     </div>
-                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-gray-200 text-bdc-blue text-[38px] leading-tight gap-28'>
-                        <img src='./images/bannericon3.svg' alt='icon' className='h-[192px] w-[192px]' />
+                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-gray-200 text-bdc-blue text-2xl md:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
+                        <img
+                            src='./images/bannericon3.svg'
+                            alt='icon'
+                            className='hidden md:block h-[192px] w-[192px]'
+                        />
                         <div className='flex flex-col gap-7'>
                             <span className='font-extrabold block max-w-[42rem]'>{sliders[3].content}</span>
                             <a href='' className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
@@ -111,7 +123,9 @@ function Arrow(props) {
     return (
         <svg
             onClick={props.onClick}
-            className={`hidden md:block arrow ${props.left ? 'left-5' : 'left-auto right-5'} ${disabled}`}
+            className={`block arrow !top-[90%] md:!top-1/2 ${
+                props.left ? 'md:left-5 left-1/3' : 'left-auto right-1/3 md:right-5'
+            } ${disabled}`}
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 24 24'>
             {props.left && <path d='M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z' />}

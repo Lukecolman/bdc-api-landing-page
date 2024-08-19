@@ -26,7 +26,7 @@ const Hero = () => {
                 <div className='mb-16 lg:max-w-lg lg:mb-0'>
                     <div className='max-w-xl mb-6'>
                         <h1
-                            className='mb-6 text-bdc-blue-700 text-3xl font-bold !leading-tight tracking-tight  sm:text-6xl md:mx-auto max-w-[900px]'
+                            className='mb-6 text-bdc-blue-700 text-4xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto max-w-[900px]'
                             dangerouslySetInnerHTML={{ __html: heroBanner.title }}
                         />
                         <p className='text-base text-bdc-blue-700 md:text-xl max-w-3xl text-pretty'>
@@ -44,36 +44,38 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex justify-center h-full lg:w-2/3 xl:w-1/2 relative'>
-                <img
-                    src='./images/bannerImg-green.svg'
-                    className='w-full h-full max-w-xl lg:h-auto lg:max-w-[462px] '
-                    alt=''
-                />
+            <div className='hidden lg:flex justify-center h-full lg:w-2/3 xl:w-1/2 relative '>
+                <div className='h-full w-full lg:h-auto lg:max-w-[462px]'>
+                    <img
+                        src='./images/bannerImg-green.svg'
+                        className='w-full h-full max-w-xl lg:h-auto lg:max-w-[462px] '
+                        alt=''
+                    />
 
-                <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute flex items-center left-28 -bottom-2 max-w-40 min-w-[150px] justify-center'>
-                    <AiOutlineFullscreen className='w-[45px] h-[45px] text-bdc-green' />
-                    <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
-                        Maximizá
-                        <br />
-                        Recursos
-                    </span>
-                </div>
-                <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute  flex items-center left-1/3 -top-10  max-w-40 min-w-[150px] justify-center'>
-                    <AiOutlinePieChart className='w-[45px] h-[45px] text-bdc-green' />
-                    <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
-                        Reducí
-                        <br />
-                        Costos
-                    </span>
-                </div>
-                <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute right-16 top-40 flex items-center max-w-40 min-w-[150px] justify-center'>
-                    <AiOutlineThunderbolt className='w-[45px] h-[45px] text-bdc-green' />
-                    <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
-                        Optimizá
-                        <br />
-                        Tiempos
-                    </span>
+                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute flex items-center left-28 -bottom-2 max-w-40 min-w-[150px] justify-center'>
+                        <AiOutlineFullscreen className='w-[45px] h-[45px] text-bdc-green' />
+                        <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
+                            Maximizá
+                            <br />
+                            Recursos
+                        </span>
+                    </div>
+                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute  flex items-center left-1/3 -top-10  max-w-40 min-w-[150px] justify-center'>
+                        <AiOutlinePieChart className='w-[45px] h-[45px] text-bdc-green' />
+                        <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
+                            Reducí
+                            <br />
+                            Costos
+                        </span>
+                    </div>
+                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute right-16 top-40 flex items-center max-w-40 min-w-[150px] justify-center'>
+                        <AiOutlineThunderbolt className='w-[45px] h-[45px] text-bdc-green' />
+                        <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
+                            Optimizá
+                            <br />
+                            Tiempos
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>

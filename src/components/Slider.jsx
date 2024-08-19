@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
+import { sliders } from '../constants';
 
-// TODO: MOVE THE TEXT TO CONSTANTS
+// TODO: MEDIAQUERIES
 
 export default () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -61,34 +62,27 @@ export default () => {
                     <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-green text-white text-[38px] leading-tight gap-28'>
                         <img src='./images/bannericon1.svg' alt='icon' className='h-[192px] w-[192px]' />
                         <div className='flex flex-col gap-7'>
-                            <span className='font-extrabold block max-w-[42rem]'>
-                                Automatizá los pagos y cobros de tus clientes y proveedores.
-                            </span>
+                            <span className='font-extrabold block max-w-[42rem]'>{sliders[1].content}</span>
                             <a href='' className='font-medium text-base bg-bdc-blue px-11 py-3 rounded w-fit'>
-                                Conocé más
+                                {sliders[1].buttonTxt}
                             </a>
                         </div>
                     </div>
                     <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-blue text-white text-[38px] leading-tight gap-28'>
                         <img src='./images/bannericon2.svg' alt='icon' className='h-[192px] w-[192px]' />
                         <div className='flex flex-col gap-7'>
-                            <span className='font-extrabold block max-w-[42rem]'>
-                                Optimizá las gestión en tu billetera virtual y brindá mejores experiencias a tus
-                                clientes.
-                            </span>
+                            <span className='font-extrabold block max-w-[42rem]'>{sliders[2].content}</span>
                             <a href='' className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
-                                Conocé más
+                                {sliders[2].buttonTxt}
                             </a>
                         </div>
                     </div>
                     <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-gray-200 text-bdc-blue text-[38px] leading-tight gap-28'>
                         <img src='./images/bannericon3.svg' alt='icon' className='h-[192px] w-[192px]' />
                         <div className='flex flex-col gap-7'>
-                            <span className='font-extrabold block max-w-[42rem]'>
-                                Consultá todos los datos de tus clientes y proveedores de forma automática.
-                            </span>
+                            <span className='font-extrabold block max-w-[42rem]'>{sliders[3].content}</span>
                             <a href='' className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
-                                Conocé más
+                                {sliders[3].buttonTxt}
                             </a>
                         </div>
                     </div>

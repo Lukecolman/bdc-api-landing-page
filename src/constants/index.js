@@ -46,6 +46,24 @@ export const heroBanner = {
         'Integrá tu sistema de gestión y dale un giro disruptivo a la tesorería de tu negocio con nuestras soluciones tecnológicas de BDC Conecta. Esto te permite minimizar errores humanos y enfocarte en la mejor experiencia de tus usuarios. ',
 };
 
+//SLIDERS
+export const sliders = {
+    1: {
+        content: 'Automatizá los pagos y cobros de tus clientes y proveedores.',
+        buttonTxt: 'Conocé más',
+        url: '',
+    },
+    2: {
+        content: 'Optimizá las gestión en tu billetera virtual y brindá mejores experiencias a tus clientes.',
+        buttonTxt: 'Conocé más',
+        url: '',
+    },
+    3: {
+        content: 'Consultá todos los datos de tus clientes y proveedores de forma automática.',
+        buttonTxt: 'Conocé más',
+        url: '',
+    },
+};
 // OPPORTUNITIES
 export const opportunities = {
     title: '¿Qué hace único a <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">BDC Conecta?</span>',

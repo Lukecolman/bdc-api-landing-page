@@ -156,49 +156,43 @@ export const integration = {
 // SOLUTIONS
 export const solutions = {
     // title: 'Soluciones de BDC Conecta',
-    title: 'Soluciones <br/>de BDC Conecta',
+    title: 'Soluciones <br/>de <span class="text-bdc-green">BDC Conecta</span>',
 
     items: [
         {
             id: 1,
-            img: '/images/payment.png',
+            img: '/images/tab-icon-1.svg',
             title: 'Cobranzas y Pagos',
             content: 'Simplificá la gestión de las cuentas de tus clientes y proveedores:',
             bullet: [
-                {
-                    1: 'Realizá  transferencias a CBU, CVU y Alias de manera rápida y segura.',
-                    2: 'Administrá tus proveedores de forma eficiente y sin complicaciones.',
-                    3: 'Transformá la gestión de tus transacciones, mejorando la eficiencia y reduciendo acciones manuales',
-                },
+                'Realizá transferencias a CBU, CVU y Alias de manera rápida y segura.',
+                'Administrá tus proveedores de forma eficiente y sin complicaciones.',
+                'Transformá la gestión de tus transacciones, mejorando la eficiencia y reduciendo acciones manuales.',
             ],
         },
         {
             id: 2,
-            img: '/images/digital-wallet.png',
+            img: '/images/tab-icon-2.svg',
             title: 'Billetera Virtual',
             content:
                 'Ofrecé diversas funcionalidades para optimizar la gestión de tu billetera y mejorar la experiencia de tus clientes:',
             bullet: [
-                {
-                    1: 'Efectuá el alta y cambiá de alias de CVU de manera sencilla.',
-                    2: 'Envía y recibí transferencias entre CBU y CVU.',
-                    3: 'Recibí notificaciones instantáneas de créditos en CVU.',
-                    4: 'Financiá directamente a tus clientes.',
-                },
+                'Efectuá el alta y cambiá de alias de CVU de manera sencilla.',
+                'Envía y recibí transferencias entre CBU y CVU.',
+                'Recibí notificaciones instantáneas de créditos en CVU.',
+                'Financiá directamente a tus clientes.',
             ],
         },
         {
             id: 3,
-            img: '/images/account-information.png',
+            img: '/images/tab-icon-3.svg',
             title: 'Información de la cuenta',
             content: 'Simplificá la gestión de las cuentas de tus clientes:',
             bullet: [
-                {
-                    1: 'Consultá fácilmente los movimientos de cuentas.',
-                    2: 'Conseguí información mediante alias, CBU o CVU.',
-                    3: 'Validá la información asociada a cada cuenta de forma precisa con nuestras diversas fuentes de información integradas.',
-                    4: 'Obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',
-                },
+                'Consultá fácilmente los movimientos de cuentas.',
+                'Conseguí información mediante alias, CBU o CVU.',
+                'Validá la información asociada a cada cuenta de forma precisa con nuestras diversas fuentes de información integradas.',
+                'Obtené el saldo y el detalle de cada cuenta de manera sencilla y eficiente.',
             ],
         },
     ],

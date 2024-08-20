@@ -3,11 +3,9 @@ import {
     Hero,
     Slider,
     Opportunities,
-    Opportunities2,
     Integration,
     Solutions,
     BDCApplicants,
-    BDCApplicants2,
     Form,
     Footer,
 } from './components/index';
@@ -19,12 +17,9 @@ function App() {
             <Hero />
             <Slider />
             <Solutions />
-            {/* <Opportunities /> */}
-            <Opportunities2 />
+            <Opportunities />
             <Integration />
-            {/* <BDCApplicants /> */}
-            <BDCApplicants2 />
-
+            <BDCApplicants />
             <Form />
             <Footer />
         </>

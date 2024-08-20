@@ -1,27 +1,25 @@
 // SECTIONS
 import Navbar from './Navbar';
 import Hero from './Hero';
-import Opportunities from './Opportunities.jsx';
-import Opportunities2 from './Opportunities2.jsx';
-import Integration from './Integration.jsx';
+import Slider from './Slider.jsx';
 import Solutions from './Solutions.jsx';
+import Tabs from './Tabs.jsx';
+import Opportunities from './Opportunities.jsx';
+import Integration from './Integration.jsx';
 import BDCApplicants from './BDCApplicants.jsx';
-import BDCApplicants2 from './BDCApplicants2.jsx';
 import Form from './Form.jsx';
 import Footer from './Footer';
-import Slider from './Slider.jsx';
 
 export {
     // SECTIONS
     Navbar,
     Hero,
     Slider,
-    Opportunities,
-    Opportunities2,
-    Integration,
     Solutions,
+    Tabs,
+    Opportunities,
+    Integration,
     BDCApplicants,
-    BDCApplicants2,
     Form,
     Footer,
 };

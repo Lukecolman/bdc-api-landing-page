@@ -24,7 +24,7 @@ const Hero = () => {
         <div className='flex px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full font-inter'>
             <div className='max-w-xl mx-auto lg:max-w-screen-xl pt-2'>
                 <div className='mb-16 lg:max-w-lg lg:mb-0'>
-                    <div className='max-w-xl mb-6'>
+                    <div className='max-w-xl mb-12 sm:mb-6'>
                         <h1
                             className='mb-6 text-bdc-blue-700 text-4xl font-extrabold !leading-tight tracking-tight  sm:text-6xl md:mx-auto max-w-[900px]'
                             dangerouslySetInnerHTML={{ __html: heroBanner.title }}
@@ -33,7 +33,7 @@ const Hero = () => {
                             {heroBanner.content}
                         </p>
                     </div>
-                    <div className='flex items-center gap-8'>
+                    <div className='flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-8'>
                         <ButtonScroll information={heroBanner} />
                         <a
                             href={heroBanner.button2.url}
@@ -45,14 +45,14 @@ const Hero = () => {
                 </div>
             </div>
             <div className='hidden lg:flex justify-center h-full lg:w-2/3 xl:w-1/2 relative '>
-                <div className='h-full w-full lg:h-auto lg:max-w-[462px]'>
+                <div className='h-full w-full lg:h-auto lg:max-w-[500px]'>
                     <img
-                        src='./images/bannerImg-green.svg'
-                        className='w-full h-full max-w-xl lg:h-auto lg:max-w-[462px] '
+                        src='./images/heroIcon.svg'
+                        className='w-full h-full max-w-xl lg:h-auto lg:max-w-[500px] '
                         alt=''
                     />
 
-                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute flex items-center left-28 -bottom-2 max-w-40 min-w-[150px] justify-center'>
+                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute flex items-center left-28 bottom-8 max-w-40 min-w-[150px] justify-center'>
                         <AiOutlineFullscreen className='w-[45px] h-[45px] text-bdc-green' />
                         <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
                             Maximizá
@@ -60,7 +60,7 @@ const Hero = () => {
                             Recursos
                         </span>
                     </div>
-                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute  flex items-center left-1/3 -top-10  max-w-40 min-w-[150px] justify-center'>
+                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute  flex items-center left-1/3 -top-4  max-w-40 min-w-[150px] justify-center'>
                         <AiOutlinePieChart className='w-[45px] h-[45px] text-bdc-green' />
                         <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
                             Reducí
@@ -68,7 +68,7 @@ const Hero = () => {
                             Costos
                         </span>
                     </div>
-                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute right-16 top-40 flex items-center max-w-40 min-w-[150px] justify-center'>
+                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute right-20 top-28 flex items-center max-w-40 min-w-[150px] justify-center'>
                         <AiOutlineThunderbolt className='w-[45px] h-[45px] text-bdc-green' />
                         <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
                             Optimizá

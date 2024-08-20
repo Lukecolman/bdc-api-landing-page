@@ -38,12 +38,12 @@ const Integration = () => {
                             return (
                                 <div
                                     key={index}
-                                    className=' flex gap-6 max-w-xl lg:max-w-md py-8 px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400 hover:border-bdc-green-400'>
+                                    className=' flex gap-6 max-w-xl lg:max-w-md py-8 px-4 md:px-12 border-b-2 border-bdc-gray-100 duration-150 bg-white transition-all group hover:bg-bdc-green-400 hover:border-bdc-green-400'>
                                     <div className='flex items-center justify-center min-w-16 h-16 mb-4 rounded-full shadow-md group-hover:bg-white transition-all'>
                                         {item.icon}
                                     </div>
                                     <p
-                                        className={`text-md leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all md:pt-3 lg:pt-0 ${
+                                        className={`text-sm md:text-base leading-snug font-semibold text-bdc-gray-700 group-hover:text-white lg:max-w-[280px] text-pretty transition-all md:pt-3 lg:pt-0 ${
                                             index === 0 ? 'lg:pt-3' : ''
                                         }`}>
                                         {item.content}

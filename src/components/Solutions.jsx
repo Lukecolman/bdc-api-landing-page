@@ -7,9 +7,9 @@ import Tabs from './Tabs';
 const Solutions = () => {
     return (
         <>
-            <div className='w-full bg-bdc-blue py-20 overflow-x-hidden font-inter border-b-[40px] border-bdc-green'>
+            <div className='px-4 py-20 md:px-0 w-full bg-bdc-blue md:py-20 overflow-x-hidden font-inter border-b-[40px] border-bdc-green'>
                 <div
-                    className='font-inter mt-24 max-w-xl mb-10 mx-auto sm:text-center lg:max-w-2xl md:mb-12'
+                    className='font-inter md:mt-24 max-w-xl mb-10 mx-auto sm:text-center lg:max-w-2xl md:mb-12'
                     id='solutions'>
                     <h2
                         className='max-w-lg mb-6 text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-6xl mx-auto'
@@ -83,7 +83,7 @@ const Solutions = () => {
                     </div> */}
                 </div>
                 <Tabs />
-                <div className='font-inter text-center mt-10 pb-14'>
+                <div className='font-inter text-center mt-20 md:mt-10 md:pb-14'>
                     <ButtonScroll
                         information={solutions}
                         bgColor={'bg-bdc-green'}

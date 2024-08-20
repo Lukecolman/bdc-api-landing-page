@@ -163,6 +163,7 @@ export const solutions = {
             id: 1,
             img: '/images/tab-icon-1.svg',
             title: 'Cobranzas y Pagos',
+            slider: 'number-slide1',
             content: 'Simplificá la gestión de las cuentas de tus clientes y proveedores:',
             bullet: [
                 'Realizá transferencias a CBU, CVU y Alias de manera rápida y segura.',
@@ -174,6 +175,7 @@ export const solutions = {
             id: 2,
             img: '/images/tab-icon-2.svg',
             title: 'Billetera Virtual',
+            slider: 'number-slide2',
             content:
                 'Ofrecé diversas funcionalidades para optimizar la gestión de tu billetera y mejorar la experiencia de tus clientes:',
             bullet: [
@@ -187,6 +189,7 @@ export const solutions = {
             id: 3,
             img: '/images/tab-icon-3.svg',
             title: 'Información de la cuenta',
+            slider: 'number-slide3',
             content: 'Simplificá la gestión de las cuentas de tus clientes:',
             bullet: [
                 'Consultá fácilmente los movimientos de cuentas.',

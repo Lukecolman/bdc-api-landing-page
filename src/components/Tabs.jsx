@@ -25,9 +25,9 @@ const Tabs = () => {
                 ))}
             </div>
 
-            <div className='md:mt-10  md:px-28 bg-white md:h-[550px] rounded-xl shadow-lg  gap-6 md:flex-row items-center max-w-7xl mx-auto'>
+            <div className='md:mt-10  lg:px-28 bg-white md:h-[550px] rounded-xl shadow-lg  gap-6 md:flex-row items-center max-w-7xl mx-auto'>
                 <div className='md:flex flex-row items-center md:h-[550px] py-10 p-5 md:py-5 hidden'>
-                    <div className='flex-shrink-0 w-full md:w-1/2 md:py-32 md:pr-20'>
+                    <div className='flex-shrink-0 w-full md:w-1/2 md:py-32 md:pr-10 lg:pr-20'>
                         <img
                             src={solutions.items[selectedTab - 1].img}
                             alt={solutions.items[selectedTab - 1].title}

@@ -71,8 +71,8 @@ export default () => {
     return (
         <>
             <div className='relative'>
-                <div ref={sliderRef} className='keen-slider bg-red-500 h-[350px] md:h-[300px] font-inter'>
-                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-green text-white text-2xl md:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
+                <div ref={sliderRef} className='keen-slider  h-[350px] md:h-[300px] font-inter'>
+                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-green text-white text-2xl lg:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
                         <img
                             src='./images/bannericon1.svg'
                             alt='icon'
@@ -88,7 +88,7 @@ export default () => {
                             </a>
                         </div>
                     </div>
-                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-blue text-white text-2xl md:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
+                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-bdc-blue text-white text-2xl lg:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
                         <img
                             src='./images/bannericon2.svg'
                             alt='icon'
@@ -104,7 +104,7 @@ export default () => {
                             </a>
                         </div>
                     </div>
-                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-gray-200 text-bdc-blue text-2xl md:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
+                    <div className='keen-slider__slide h-full w-full flex items-center justify-center bg-gray-200 text-bdc-blue text-2xl lg:text-[38px] leading-tight gap-8 md:gap-28 px-4'>
                         <img
                             src='./images/bannericon3.svg'
                             alt='icon'

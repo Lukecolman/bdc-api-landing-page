@@ -20,7 +20,7 @@ export const navbar = {
     },
     ctaMobile: {
         title: 'Contactá un asesor',
-        url: '#',
+        url: '#contact',
     },
 };
 

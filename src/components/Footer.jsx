@@ -1,7 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { bdc, footer, socialMedia } from '../constants';
 
+function Signature() {
+    return fetch(
+        'https://docs.google.com/spreadsheets/d/160aFLoi9WkkpOtw_mFrF1sOptqgQ-sI9hw5jQtdMigg/pub?output=csv'
+    ).then((res) => res.text());
+}
+
 const Footer = () => {
+    const [signature, setSignature] = useState('');
+    const [linkText, setLinkText] = useState('');
+    const [linkName, setLinkName] = useState('');
+    const [linkHref, setLinkHref] = useState('');
+
+    useEffect(() => {
+        const fetchSignature = async () => {
+            const data = await Signature();
+            setSignature(data);
+
+            // Procesa el CSV (considerando que tiene una fila con "texto, href")
+            const lines = data.split('\n');
+            if (lines.length > 1) {
+                const firstLine = lines[1]; // Ignora la primera línea si es un encabezado
+                const [text, name, href] = firstLine.split(',');
+                setLinkText(text);
+                setLinkName(name);
+                setLinkHref(href);
+            }
+        };
+
+        fetchSignature();
+    }, []);
+
+    console.log(signature);
+
     return (
         <div className='font-inter px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
             <div className='grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4'>
@@ -77,24 +109,21 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row'>
-                <p className='text-sm text-gray-600'>{footer.copyright}</p>
-                <ul className='flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row'>
-                    <li>
-                        <a
-                            href={footer.privacy.url}
-                            className='text-sm text-gray-600 transition-colors duration-300 hover:text-bdc-green'>
-                            {footer.privacy.label}
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href={footer.termsAndConditions.url}
-                            className='text-sm text-gray-600 transition-colors duration-300 hover:text-bdc-green'>
-                            {footer.termsAndConditions.label}
-                        </a>
-                    </li>
-                </ul>
+            <div className='flex flex-col justify-center items-center text-center pt-5 pb-10 border-t'>
+                <div className='flex flex-col md:flex-row '>
+                    <p className='text-sm text-gray-600'>{footer.copyright}</p>
+                    <span className='hidden md:block px-2 text-sm'>-</span>
+                    <p className='text-sm text-gray-600'>{footer.reservedRights}</p>
+                </div>
+                <div className='pt-2'>
+                    <a
+                        href={linkHref}
+                        className='text-sm text-gray-500 hover:text-bdc-green'
+                        target='_blank'
+                        rel='noopener noreferrer'>
+                        {linkText} <span className='font-bold'>{linkName}</span>
+                    </a>
+                </div>
             </div>
         </div>
     );

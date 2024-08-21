@@ -3,6 +3,7 @@ import { bdcApplicants } from '../constants';
 import { AiOutlineWallet, AiOutlineShoppingCart, AiOutlineMedicineBox, AiOutlineRead } from 'react-icons/ai';
 import { CgGym } from 'react-icons/cg';
 import { HiOutlineBuildingOffice } from 'react-icons/hi2';
+import { motion } from 'framer-motion';
 
 const BDCApplicants = () => {
     const applicant = bdcApplicants[0];
@@ -55,13 +56,18 @@ const BDCApplicants = () => {
 
     return (
         <div className='font-inter px-4 py-16 w-full  lg:px-8 lg:py-32 bg-bdc-blue'>
-            <div className=' mb-10 md:mx-auto sm:text-center lg:max-w-5xl md:mb-16'>
+            <motion.div
+                initial={{ opacity: 0, translateY: '100px' }}
+                whileInView={{ opacity: 1, translateY: '0px' }}
+                transition={{ duration: 0.3, delay: 0.1 }}
+                viewport={{ margin: '-10px', once: true }}
+                className=' mb-10 md:mx-auto sm:text-center lg:max-w-5xl md:mb-16'>
                 <h2
                     className='max-w-7xl mb-6 text-4xl font-bold leading-none tracking-tight text-white sm:text-4xl md:text-6xl md:mx-auto text-balance'
                     dangerouslySetInnerHTML={{ __html: applicant.title }}
                 />
                 <p className='max-w-2xl mx-auto text-base text-white md:text-lg text-pretty'>{applicant.subtitle}</p>
-            </div>
+            </motion.div>
             <div className='space-y-4 max-w-2xl mx-auto'>
                 <Item title={applicant.item1[0].title} icon={AiOutlineWallet}>
                     {applicant.item1[0].content}

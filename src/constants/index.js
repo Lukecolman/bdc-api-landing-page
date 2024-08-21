@@ -309,7 +309,8 @@ export const footer = {
             url: 'https://maps.app.goo.gl/yjo4f5zQaHDPUiiK6',
         },
     },
-    copyright: 'Banco de comercio © 2024 - Todos los derechos reservados.',
+    copyright: 'Banco de comercio © 2024',
+    reservedRights: 'Todos los derechos reservados.',
     signature: '',
     privacy: {
         label: 'Políticas de Privacidad',

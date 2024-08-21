@@ -3,7 +3,6 @@ import { heroBanner } from '../constants';
 import ButtonScroll from './buttonScroll';
 import { AiOutlineFullscreen, AiOutlinePieChart, AiOutlineThunderbolt } from 'react-icons/ai';
 import { useAnimate, stagger, motion } from 'framer-motion';
-// const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
 const Hero = () => {
     const handleScroll = (e) => {
@@ -21,21 +20,6 @@ const Hero = () => {
             });
         }
     };
-    //     const [scope, animate] = useAnimate();
-
-    //   useEffect(() => {
-
-    //     animate(
-    //       "li",
-    //       isOpen
-    //         ? { opacity: 1, scale: 1, filter: "blur(0px)" }
-    //         : { opacity: 0, scale: 0.3, filter: "blur(20px)" },
-    //       {
-    //         duration: 0.2,
-    //         delay: isOpen ? staggerMenuItems : 0,
-    //       }
-    //     );
-    //   }, [isOpen]);
     return (
         <div className='flex px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full font-inter'>
             <div className='max-w-xl mx-auto lg:max-w-screen-xl pt-2'>

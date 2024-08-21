@@ -1,4 +1,3 @@
-// TODO:
 // - TEXTOS HEADER / FORM / FOOTER
 export const bdc = {
     logo: './images/logo-bdc.svg',
@@ -67,7 +66,6 @@ export const sliders = {
 // OPPORTUNITIES
 export const opportunities = {
     title: '¿Qué hace único a <span class="bg-gradient-to-br from-bdc-green-400 via-bdc-green  to-bdc-green-600 bg-clip-text text-transparent">BDC Conecta?</span>',
-    // subtitle: '¿En qué facilita el desarrollo de mi empresa integrar BDC Conecta?',
     subtitle: '',
     items: [
         {

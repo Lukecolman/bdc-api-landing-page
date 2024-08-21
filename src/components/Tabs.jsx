@@ -1,29 +1,12 @@
 import React, { useState } from 'react';
 import { solutions } from '../constants';
 import TabsMobile from './TabsMobile';
-// TESTEO
-
-// import "keen-slider/keen-slider.min.css"
-// import "./styles.css"
 
 const Tabs = () => {
     const [selectedTab, setSelectedTab] = useState(1);
-    // TESTEO
-    // const [currentSlide, setCurrentSlide] = useState(0);
-    // const [loaded, setLoaded] = useState(false);
-    // const [sliderRef, instanceRef] = useKeenSlider({
-    //     initial: 0,
-    //     slideChanged(slider) {
-    //         setCurrentSlide(slider.track.details.rel);
-    //     },
-    //     created() {
-    //         setLoaded(true);
-    //     },
-    // });
 
     return (
         <div className='w-full md:p-4'>
-            {/* //ACA */}
             <div className='hidden md:flex justify-center gap-10'>
                 {solutions.items.map((item) => (
                     <button

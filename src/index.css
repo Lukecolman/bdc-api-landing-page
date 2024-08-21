@@ -4,79 +4,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/* :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
-
-
-
-
 .arrow {
   width: 30px;
   height: 30px;
@@ -88,28 +15,16 @@ button:focus-visible {
   cursor: pointer;
 }
 
-
-/* .arrow--disabled {
-  fill: rgba(255, 255, 255, 0.5);
-} */
-
-
-
 [class^="number-slide"],
 [class*=" number-slide"] {
   background: grey;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-size: 50px; */
   color: #fff;
-  /* font-weight: 500; */
   height: 40px;
   width: 30px;
-  /* max-height: 100vh; */
 }
-
-
 
 .navigation-wrapper {
   position: relative;
@@ -127,9 +42,7 @@ button:focus-visible {
   width: 56px;
   height: 6px;
   background: #d1d5db;
-  /* border-radius: 50%; */
   margin: 0 5px;
-  /* padding: 5px; */
   cursor: pointer;
 }
 
@@ -141,27 +54,3 @@ button:focus-visible {
   background: #95c45a;
   height: 9px;
 }
-
-/* .arrow {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  fill: #fff;
-  cursor: pointer;
-}
-
-.arrow--left {
-  left: 5px;
-}
-
-.arrow--right {
-  left: auto;
-  right: 5px;
-}
-
-.arrow--disabled {
-  fill: rgba(255, 255, 255, 0.5);
-} */

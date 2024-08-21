@@ -3,8 +3,6 @@ import { useState, useRef } from 'react';
 import { bdc, navbar } from '../constants';
 
 const Navbar = () => {
-    // TODO: AJUSTAR NAVBAR MOBILE
-
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const handleScroll = (e) => {
         e.preventDefault();
@@ -58,18 +56,6 @@ const Navbar = () => {
                         </a>
                     </li>
                 </ul>
-                {/* <ul className=" items-center hidden space-x-8 lg:flex">
-          <li>
-            <a
-              href="/"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-green-800 hover:bg-green-700 focus:shadow-outline focus:outline-none"
-              aria-label="Sign up"
-              title="Sign up"
-            >
-              Sign up
-            </a>
-          </li>
-        </ul> */}
 
                 {/* MOBILE */}
                 <div className='lg:hidden'>

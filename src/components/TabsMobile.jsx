@@ -80,20 +80,6 @@ const TabsMobile = () => {
                         </div>
                     ))}
                 </div>
-
-                {/* {loaded && instanceRef.current && (
-                    <div className='absolute -bottom-3.5 z-50 relative'>
-                        <Arrow
-                            left
-                            onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
-                            disabled={currentSlide === 0}
-                        />
-                        <Arrow
-                            onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
-                            disabled={currentSlide === instanceRef.current.track.details.slides.length - 1}
-                        />
-                    </div>
-                )} */}
                 {loaded && instanceRef.current && (
                     <div className='dots w-full z-40 absolute center transition-all duration-300 ease-in-out '>
                         {[...Array(instanceRef.current.track.details.slides.length).keys()].map((idx) => (

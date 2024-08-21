@@ -2,8 +2,9 @@ import React from 'react';
 import { heroBanner } from '../constants';
 import ButtonScroll from './buttonScroll';
 import { AiOutlineFullscreen, AiOutlinePieChart, AiOutlineThunderbolt } from 'react-icons/ai';
+import { useAnimate, stagger, motion } from 'framer-motion';
+// const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
 
-/* TODO: ADD EXTRA TEXT AT THE BOTTOM OF THE IMAGE IN THE HERO "imageFooter" */
 const Hero = () => {
     const handleScroll = (e) => {
         e.preventDefault();
@@ -20,6 +21,21 @@ const Hero = () => {
             });
         }
     };
+    //     const [scope, animate] = useAnimate();
+
+    //   useEffect(() => {
+
+    //     animate(
+    //       "li",
+    //       isOpen
+    //         ? { opacity: 1, scale: 1, filter: "blur(0px)" }
+    //         : { opacity: 0, scale: 0.3, filter: "blur(20px)" },
+    //       {
+    //         duration: 0.2,
+    //         delay: isOpen ? staggerMenuItems : 0,
+    //       }
+    //     );
+    //   }, [isOpen]);
     return (
         <div className='flex px-4 pt-16 mx-auto lg:py-32 md:px-8 xl:px-20 sm:max-w-xl md:max-w-full font-inter'>
             <div className='max-w-xl mx-auto lg:max-w-screen-xl pt-2'>
@@ -44,7 +60,12 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='hidden lg:flex justify-center h-full lg:w-2/3 xl:w-1/2 relative '>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.5 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                stagger={(0.5, { startDelay: 1 })}
+                className='hidden lg:flex justify-center h-full lg:w-2/3 xl:w-1/2 relative '>
                 <div className='h-full w-full lg:h-auto lg:max-w-[500px]'>
                     <img
                         src='./images/heroIcon.svg'
@@ -52,32 +73,44 @@ const Hero = () => {
                         alt=''
                     />
 
-                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute flex items-center left-28 bottom-8 max-w-40 min-w-[150px] justify-center'>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5, startDelay: 1.15 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.4 }}
+                        className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute flex items-center left-28 bottom-8 max-w-40 min-w-[150px] justify-center'>
                         <AiOutlineFullscreen className='w-[45px] h-[45px] text-bdc-green' />
                         <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
                             Maximizá
                             <br />
                             Recursos
                         </span>
-                    </div>
-                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute  flex items-center left-1/3 -top-4  max-w-40 min-w-[150px] justify-center'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5, startDelay: 1.15 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.8 }}
+                        className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute  flex items-center left-1/3 -top-4  max-w-40 min-w-[150px] justify-center'>
                         <AiOutlinePieChart className='w-[45px] h-[45px] text-bdc-green' />
                         <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
                             Reducí
                             <br />
                             Costos
                         </span>
-                    </div>
-                    <div className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute right-20 top-28 flex items-center max-w-40 min-w-[150px] justify-center'>
+                    </motion.div>
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.5, startDelay: 1.15 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{ delay: 0.6 }}
+                        className='bg-white py-3 px-4 gap-2 rounded-lg shadow-md absolute right-20 top-28 flex items-center max-w-40 min-w-[150px] justify-center'>
                         <AiOutlineThunderbolt className='w-[45px] h-[45px] text-bdc-green' />
                         <span className='text-base text-bdc-blue font-semibold leading-[1.15]'>
                             Optimizá
                             <br />
                             Tiempos
                         </span>
-                    </div>
+                    </motion.div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     );
 };

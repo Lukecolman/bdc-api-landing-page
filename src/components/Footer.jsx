@@ -18,10 +18,9 @@ const Footer = () => {
             const data = await Signature();
             setSignature(data);
 
-            // Procesa el CSV (considerando que tiene una fila con "texto, href")
             const lines = data.split('\n');
             if (lines.length > 1) {
-                const firstLine = lines[1]; // Ignora la primera línea si es un encabezado
+                const firstLine = lines[1];
                 const [text, name, href] = firstLine.split(',');
                 setLinkText(text);
                 setLinkName(name);
@@ -31,8 +30,6 @@ const Footer = () => {
 
         fetchSignature();
     }, []);
-
-    console.log(signature);
 
     return (
         <div className='font-inter px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
@@ -44,7 +41,6 @@ const Footer = () => {
                 </div>
                 <div className='space-y-2 text-sm'>
                     <p className='text-base font-bold tracking-wide text-gray-900'>{footer.contacto.title}</p>
-                    {/* PHONE */}
                     <div>
                         <p className='mr-1 text-gray-800'>{footer.contacto.phone.label}</p>
                         <a
@@ -55,7 +51,6 @@ const Footer = () => {
                             {footer.contacto.phone.info}
                         </a>
                     </div>
-                    {/* EMAIL */}
                     <div>
                         <p className='mr-1 text-gray-800'>{footer.contacto.email.label}</p>
                         <a
@@ -66,7 +61,6 @@ const Footer = () => {
                             {footer.contacto.email.info}
                         </a>
                     </div>
-                    {/* ADDRESS */}
                     <div>
                         <p className='mr-1 text-gray-800'>{footer.contacto.address.label}</p>
                         <a
@@ -109,7 +103,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex flex-col justify-center items-center text-center pt-5 pb-10 border-t'>
+            <div className='flex flex-col justify-center items-center text-center pt-5 pb-5 border-t'>
                 <div className='flex flex-col md:flex-row '>
                     <p className='text-sm text-gray-600'>{footer.copyright}</p>
                     <span className='hidden md:block px-2 text-sm'>-</span>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
-import { sliders } from '../constants';
+import { sliders, navbar } from '../constants';
 
 export default () => {
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -52,6 +52,21 @@ export default () => {
             },
         ]
     );
+    const handleScroll = (e) => {
+        e.preventDefault();
+        const targetId = e.currentTarget.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+            const yOffset = -75;
+            const y = targetElement.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+            window.scrollTo({
+                top: y,
+                behavior: 'smooth',
+            });
+        }
+    };
 
     return (
         <>
@@ -65,7 +80,10 @@ export default () => {
                         />
                         <div className='flex flex-col gap-7'>
                             <span className='font-extrabold block max-w-[42rem]'>{sliders[1].content}</span>
-                            <a href='' className='font-medium text-base bg-bdc-blue px-11 py-3 rounded w-fit'>
+                            <a
+                                href={navbar.soluciones.url}
+                                onClick={handleScroll}
+                                className='font-medium text-base bg-bdc-blue px-11 py-3 rounded w-fit'>
                                 {sliders[1].buttonTxt}
                             </a>
                         </div>
@@ -78,7 +96,10 @@ export default () => {
                         />
                         <div className='flex flex-col gap-7'>
                             <span className='font-extrabold block max-w-[42rem]'>{sliders[2].content}</span>
-                            <a href='' className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
+                            <a
+                                href={navbar.soluciones.url}
+                                onClick={handleScroll}
+                                className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
                                 {sliders[2].buttonTxt}
                             </a>
                         </div>
@@ -91,7 +112,10 @@ export default () => {
                         />
                         <div className='flex flex-col gap-7'>
                             <span className='font-extrabold block max-w-[42rem]'>{sliders[3].content}</span>
-                            <a href='' className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
+                            <a
+                                href={navbar.soluciones.url}
+                                onClick={handleScroll}
+                                className='font-medium text-base bg-bdc-green px-11 py-3 rounded w-fit'>
                                 {sliders[3].buttonTxt}
                             </a>
                         </div>

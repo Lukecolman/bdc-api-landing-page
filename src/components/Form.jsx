@@ -84,7 +84,12 @@ const Form = () => {
                             <form onSubmit={handleSubmit}>
                                 <div className='mb-1 sm:mb-2 text-base'>
                                     <div className='grid grid-cols-2 gap-x-5 gap-y-3'>
-                                        <input type='hidden' name='from_name' value='Mission Control' />
+                                        <input
+                                            type='hidden'
+                                            name='from_name'
+                                            value='Mission Control'
+                                            autoComplete='on'
+                                        />
 
                                         <input
                                             placeholder='Nombre y Apellido'
@@ -128,6 +133,7 @@ const Form = () => {
                                             value={formData.cuit}
                                             onChange={handleChange}
                                             required
+                                            autoComplete='off'
                                         />
 
                                         <input
@@ -138,6 +144,7 @@ const Form = () => {
                                             name='razonSocial'
                                             value={formData.razonSocial}
                                             onChange={handleChange}
+                                            autoComplete='off'
                                         />
 
                                         <textarea

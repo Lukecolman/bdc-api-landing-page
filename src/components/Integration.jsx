@@ -14,7 +14,7 @@ const Integration = () => {
     return (
         <section className='w-full bg-bdc-gray-100/25 overflow-hidden'>
             <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-32'>
-                <div className='hidden md:flex flex-col lg:pl-16 justify-between items-center lg:flex-row'>
+                <div className='hidden ml:flex flex-col lg:pl-16 justify-between items-center lg:flex-row'>
                     <motion.div
                         initial={{ opacity: 0, translateX: '-100px' }}
                         whileInView={{ opacity: 1, translateX: '0px' }}
@@ -53,7 +53,7 @@ const Integration = () => {
                     </motion.div>
                 </div>
                 {/* MOBILE */}
-                <div className='flex md:hidden flex-col lg:pl-16 justify-between items-center lg:flex-row'>
+                <div className='flex ml:hidden flex-col lg:pl-16 justify-between items-center '>
                     <motion.div
                         initial={{ opacity: 0, translateY: '100px' }}
                         whileInView={{ opacity: 1, translateY: '0px' }}

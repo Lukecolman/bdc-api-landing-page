@@ -12,7 +12,7 @@ const Integration = () => {
     ];
 
     return (
-        <section className='w-full bg-bdc-gray-100/25'>
+        <section className='w-full bg-bdc-gray-100/25 overflow-hidden'>
             <div className='font-inter px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-8 lg:py-32'>
                 <div className='hidden md:flex flex-col lg:pl-16 justify-between items-center lg:flex-row'>
                     <motion.div
